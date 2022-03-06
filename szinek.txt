@@ -1,0 +1,6 @@
+1. oldal
+
+háttér: #3A86FF
+gomb háttér: #3470CE
+gomb nyomva háttér: #525252
+betű: #fff
