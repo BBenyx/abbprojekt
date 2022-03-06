@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .h11 {
     margin: 20px;
@@ -47,4 +51,9 @@ h1 {
 #radio1on:checked ~ .h11 {
     z-index: 4;
     visibility: hidden;
+}
+
+#elsooldal {
+    height: 100vh;
+    background: #3A86FF;
 }
