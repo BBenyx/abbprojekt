@@ -20,11 +20,11 @@
 
 .h11:hover{
     transition: background-color 200ms, box-shadow 200ms;
-    background-color: #3470CE;
-    box-shadow: 4px 4px 2px #007;
+    background-color: #05e;
+    box-shadow: 4px 4px 2px #006;
 }
 .h11:not(:hover) {
-    background-color: #07f;
+    background-color: #3470CE;
     transition: 200ms;
 }
 
