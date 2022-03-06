@@ -10,7 +10,12 @@
     height: 150px;
 }
 
-.h11, .h21, .h31, .h41, .h51, .h61 {
+.h11,
+.h21,
+.h31,
+.h41,
+.h51,
+.h61 {
     margin: 20px;
     width: 430px;
     height: 90px;
@@ -24,17 +29,33 @@
     font-family: sans-serif;
 }
 
-.h11:hover, .h21:hover, .h31:hover, .h41:hover, .h51:hover, .h61:hover{
+.h11:hover,
+.h21:hover,
+.h31:hover,
+.h41:hover,
+.h51:hover,
+.h61:hover {
     transition: background-color 200ms, box-shadow 200ms;
     background-color: #05e;
     box-shadow: 4px 4px 2px #006;
 }
-.h11:not(:hover), .h21:not(:hover), .h31:not(:hover), .h41:not(:hover), .h51:not(:hover), .h61:not(:hover) {
+
+.h11:not(:hover),
+.h21:not(:hover),
+.h31:not(:hover),
+.h41:not(:hover),
+.h51:not(:hover),
+.h61:not(:hover) {
     background-color: #3470CE;
     transition: 200ms;
 }
 
-.h11 div, .h21 div, .h31 div, .h41 div, .h51 div, .h61 div {
+.h11 div,
+.h21 div,
+.h31 div,
+.h41 div,
+.h51 div,
+.h61 div {
     margin-top: -40px;
     display: inline-block;
     padding: 18px;
@@ -45,7 +66,12 @@
     border-radius: 100px;
 }
 
-.h12, .h22, .h32, .h42, .h52, .h62{
+.h12,
+.h22,
+.h32,
+.h42,
+.h52,
+.h62 {
     margin: 20px;
     width: 430px;
     height: 90px;
@@ -59,18 +85,39 @@
     font-family: monospace;
 }
 
-.h12:hover, .h22:hover, .h32:hover, .h42:hover, .h52:hover, .h62:hover {
+.h12:hover,
+.h22:hover,
+.h32:hover,
+.h42:hover,
+.h52:hover,
+.h62:hover {
     background-color: #777;
     box-shadow: inset 5px 5px 2px #444;
     transition: background-color 200ms, box-shadow 200ms;
 }
 
-.h12:not(:hover), .h22:not(:hover), .h32:not(:hover), .h42:not(:hover), .h52:not(:hover), .h62:not(:hover) {
+.h12:not(:hover),
+.h22:not(:hover),
+.h32:not(:hover),
+.h42:not(:hover),
+.h52:not(:hover),
+.h62:not(:hover) {
     background-color: #525252;
     transition: background-color 200ms, box-shadow 200ms;
 }
 
-#radio1on,#radio1off,#radio2on,#radio2off,#radio3on,#radio3off,#radio4on,#radio4off,#radio5on,#radio5off,#radio6on,#radio6off {
+#radio1on,
+#radio1off,
+#radio2on,
+#radio2off,
+#radio3on,
+#radio3off,
+#radio4on,
+#radio4off,
+#radio5on,
+#radio5off,
+#radio6on,
+#radio6off {
     display: none;
 }
 
@@ -80,7 +127,12 @@ h1 {
     color: #fff;
 }
 
-#radio1on:checked ~ .h11, #radio2on:checked ~ .h21, #radio3on:checked ~ .h31, #radio4on:checked ~ .h41, #radio5on:checked ~ .h51, #radio6on:checked ~ .h61 {
+#radio1on:checked~.h11,
+#radio2on:checked~.h21,
+#radio3on:checked~.h31,
+#radio4on:checked~.h41,
+#radio5on:checked~.h51,
+#radio6on:checked~.h61 {
     z-index: 4;
     visibility: hidden;
 }
@@ -135,7 +187,7 @@ h1 {
     z-index: 2;
 }
 
-#masodikoldal #gombocska{
+#masodikoldal #gombocska {
     position: absolute;
     top: 0px;
     width: 100%;
@@ -145,91 +197,111 @@ h1 {
     z-index: 5;
 }
 
-#masodikoldal .card .tartalom{
+#masodikoldal .card .tartalom {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #EDB419;
     border-radius: 10px;
-    box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
-    padding: 20px;
-}
-
-#gombocska:nth-child(1):checked + .tartalom {
-    box-shadow: inset 10px 10px 0 rgba(0, 0, 0, 0.4);
-    background: #525252;
-}
-
-#gombocska:checked + .leiras {
-    display: none;
-}
-
-#gombocska:checked ~ .kod {
-    display: none;
-}
-
-#masodikoldal .card .tartalom .leiras{
-    position: relative;
-    display: grid;
-    grid-template-rows: 10% 80% 10%;
-    height: 100%;
-    color: #fff;
-}
-
-#masodikoldal .card .tartalom .leiras .fejlec,
-#masodikoldal .card .tartalom .leiras .lablec{
-    display: flex;
-    align-items: center;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-#masodikoldal .card .tartalom .leiras .fejlec{
-    border-bottom: 3px solid #fff;
-    
-}
-
-#masodikoldal .card .tartalom .leiras .lablec{
-    border-top: 3px solid #fff;
-    justify-content: right;
-}
-
-#masodikoldal .card .tartalom .leiras .kozep{
-    padding: 10px 0;
-    font-size: 1.1em;
-    overflow-y: auto;
-}
-
-#masodikoldal .card .tartalom .kod{
-    position: relative;
-    display: grid;
-    grid-template-rows: 10% 80% 10%;
-    height: 100%;
-    color: #fff;
     font-family: monospace;
 }
 
-#masodikoldal .card .tartalom .kod .fejlec,
-#masodikoldal .card .tartalom .kod .lablec{
+
+#gombocska:checked~#masodikoldalleiras {
+    visibility: hidden;
+}
+
+#gombocska:checked~#masodikoldalkod {
+    visibility: visible;
+}
+
+#masodikoldal .card .tartalom #masodikoldalleiras {
+    position: absolute;
+    background: #EDB419;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 3;
+}
+
+#masodikoldal .card .tartalom .leiras {
+    position: relative;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: 100%;
+    color: #fff;
+
+}
+
+#masodikoldal .card .tartalom .leiras .fejlec,
+#masodikoldal .card .tartalom .leiras .lablec {
     display: flex;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 2em;
     font-weight: bold;
 }
 
-#masodikoldal .card .tartalom .kod .fejlec{
+#masodikoldal .card .tartalom .leiras .fejlec {
     border-bottom: 3px solid #fff;
-    
+
 }
 
-#masodikoldal .card .tartalom .kod .lablec{
+#masodikoldal .card .tartalom .leiras .lablec {
     border-top: 3px solid #fff;
     justify-content: right;
 }
 
-#masodikoldal .card .tartalom .kod .kozep{
+#masodikoldal .card .tartalom .leiras .kozep {
     padding: 10px 0;
-    font-size: 1.1em;
+    font-size: 1.2em;
     overflow-y: auto;
 }
 
+
+#masodikoldal .card .tartalom #masodikoldalkod {
+    position: absolute;
+    background: #58513e;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 0 rgb(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 2;
+}
+
+#masodikoldal .card .tartalom .kod {
+    position: relative;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: 100%;
+    color: #fff;
+}
+
+#masodikoldal .card .tartalom .kod .fejlec,
+#masodikoldal .card .tartalom .kod .lablec {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#masodikoldal .card .tartalom .kod .fejlec {
+    border-bottom: 3px solid #fff;
+
+}
+
+#masodikoldal .card .tartalom .kod .lablec {
+    border-top: 3px solid #fff;
+    justify-content: right;
+}
+
+#masodikoldal .card .tartalom .kod .kozep {
+    padding: 10px 0;
+    font-size: 1.2em;
+    overflow-y: auto;
+}
