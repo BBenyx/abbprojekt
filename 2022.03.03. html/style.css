@@ -105,5 +105,9 @@ h1 {
 }
 
 #masodikoldal .card .leiras{
+    background: #007;
+}
 
+#masodikoldal .card #masodikoldalgomb:checked + .leiras{
+    background: #fff;
 }
