@@ -6,36 +6,62 @@
 
 .h11 {
     margin: 20px;
-    width: 300px;
-    height: 50px;
-    padding-top: 5px;
-    background-color: #07f;
-    box-shadow: 5px 5px 2px #009;
+    width: 430px;
+    height: 90px;
+    padding: 20px;
+    padding-top: 35px;
+    background-color: #3470CE;
+    box-shadow: 7px 7px 2px #009;
     border-radius: 3px;
     position: absolute;
     z-index: 5;
+    font-family: sans-serif;
 }
 
 .h11:hover{
     transition: background-color 200ms, box-shadow 200ms;
-    background-color: #05f;
-    box-shadow: 3px 3px 2px #007;
+    background-color: #3470CE;
+    box-shadow: 4px 4px 2px #007;
 }
 .h11:not(:hover) {
     background-color: #07f;
     transition: 200ms;
 }
 
+.h11 div {
+    margin-top: -40px;
+    display: inline-block;
+    padding: 18px;
+    padding-bottom: 42px;
+    height: 25px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 100px;
+}
+
 .h12{
     margin: 20px;
-    width: 300px;
-    height: 50px;
-    padding-top: 5px;
-    background-color: #555;
-    box-shadow: inset 5px 5px 2px #333;
+    width: 430px;
+    height: 90px;
+    padding: 20px;
+    padding-top: 35px;
+    background-color: #525252;
+    box-shadow: inset 7px 7px 2px #333;
     border-radius: 3px;
     position: absolute;
     z-index: 4;
+    font-family: monospace;
+}
+
+.h12:hover {
+    background-color: #777;
+    box-shadow: inset 5px 5px 2px #444;
+    transition: background-color 200ms, box-shadow 200ms;
+}
+
+.h12:not(:hover) {
+    background-color: #525252;
+    transition: background-color 200ms, box-shadow 200ms;
 }
 
 #radio1on,#radio1off {
