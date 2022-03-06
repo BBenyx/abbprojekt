@@ -1,0 +1,50 @@
+
+
+.h11 {
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    padding-top: 5px;
+    background-color: #07f;
+    box-shadow: 5px 5px 2px #009;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 5;
+}
+
+.h11:hover{
+    transition: 200ms;
+    background-color: #05f;
+    box-shadow: 3px 3px 2px #007;
+}
+.h11:not(:hover) {
+    background-color: #07f;
+    transition: background-color 200ms;
+}
+
+.h12{
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    padding-top: 5px;
+    background-color: #555;
+    box-shadow: inset 5px 5px 2px #333;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 4;
+}
+
+#radio1on,#radio1off {
+    display: none;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#radio1on:checked ~ .h11 {
+    z-index: 4;
+    visibility: hidden;
+}
