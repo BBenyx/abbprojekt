@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .h11 {
     margin: 20px;
@@ -17,13 +13,13 @@
 }
 
 .h11:hover{
-    transition: background-color 200ms, box-shadow 200ms;
+    transition: 200ms;
     background-color: #05f;
     box-shadow: 3px 3px 2px #007;
 }
 .h11:not(:hover) {
     background-color: #07f;
-    transition: 200ms;
+    transition: background-color 200ms;
 }
 
 .h12{
@@ -51,9 +47,4 @@ h1 {
 #radio1on:checked ~ .h11 {
     z-index: 4;
     visibility: hidden;
-}
-
-#elsooldal {
-    height: 100vh;
-    background: #3A86FF;
 }
