@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-.h11 {
+.gombcont {
+    position: relative;
+    width: 500px;
+    height: 150px;
+}
+
+.h11, .h21, .h31, .h41, .h51, .h61 {
     margin: 20px;
     width: 430px;
     height: 90px;
@@ -18,17 +24,17 @@
     font-family: sans-serif;
 }
 
-.h11:hover{
+.h11:hover, .h21:hover, .h31:hover, .h41:hover, .h51:hover, .h61:hover{
     transition: background-color 200ms, box-shadow 200ms;
     background-color: #05e;
     box-shadow: 4px 4px 2px #006;
 }
-.h11:not(:hover) {
+.h11:not(:hover), .h21:not(:hover), .h31:not(:hover), .h41:not(:hover), .h51:not(:hover), .h61:not(:hover) {
     background-color: #3470CE;
     transition: 200ms;
 }
 
-.h11 div {
+.h11 div, .h21 div, .h31 div, .h41 div, .h51 div, .h61 div {
     margin-top: -40px;
     display: inline-block;
     padding: 18px;
@@ -39,7 +45,7 @@
     border-radius: 100px;
 }
 
-.h12{
+.h12, .h22, .h32, .h42, .h52, .h62{
     margin: 20px;
     width: 430px;
     height: 90px;
@@ -53,18 +59,18 @@
     font-family: monospace;
 }
 
-.h12:hover {
+.h12:hover, .h22:hover, .h32:hover, .h42:hover, .h52:hover, .h62:hover {
     background-color: #777;
     box-shadow: inset 5px 5px 2px #444;
     transition: background-color 200ms, box-shadow 200ms;
 }
 
-.h12:not(:hover) {
+.h12:not(:hover), .h22:not(:hover), .h32:not(:hover), .h42:not(:hover), .h52:not(:hover), .h62:not(:hover) {
     background-color: #525252;
     transition: background-color 200ms, box-shadow 200ms;
 }
 
-#radio1on,#radio1off {
+#radio1on,#radio1off,#radio2on,#radio2off,#radio3on,#radio3off,#radio4on,#radio4off,#radio5on,#radio5off,#radio6on,#radio6off {
     display: none;
 }
 
@@ -74,7 +80,7 @@ h1 {
     color: #fff;
 }
 
-#radio1on:checked ~ .h11 {
+#radio1on:checked ~ .h11, #radio2on:checked ~ .h21, #radio3on:checked ~ .h31, #radio4on:checked ~ .h41, #radio5on:checked ~ .h51, #radio6on:checked ~ .h61 {
     z-index: 4;
     visibility: hidden;
 }
