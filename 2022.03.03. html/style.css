@@ -13,13 +13,13 @@
 }
 
 .h11:hover{
-    transition: 200ms;
+    transition: background-color 200ms, box-shadow 200ms;
     background-color: #05f;
     box-shadow: 3px 3px 2px #007;
 }
 .h11:not(:hover) {
     background-color: #07f;
-    transition: background-color 200ms;
+    transition: 200ms;
 }
 
 .h12{
