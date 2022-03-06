@@ -63,4 +63,18 @@ h1 {
 #masodikoldal{
     height: 100vh;
     background: #FFBE0B;
+    font-family: sans-serif;
+}
+
+#masodikoldal .cim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 10px 10px 0 rgb(0, 0, 0, 20%);
+    letter-spacing: 2px;
+    height: 10vh;
+    color: #fff;
 }
