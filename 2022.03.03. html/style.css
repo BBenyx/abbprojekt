@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,11 +18,12 @@
     font-family: sans-serif;
 }
 
-.h11:hover{
+.h11:hover {
     transition: background-color 200ms, box-shadow 200ms;
     background-color: #3470CE;
     box-shadow: 4px 4px 2px #007;
 }
+
 .h11:not(:hover) {
     background-color: #07f;
     transition: 200ms;
@@ -39,7 +40,7 @@
     border-radius: 100px;
 }
 
-.h12{
+.h12 {
     margin: 20px;
     width: 430px;
     height: 90px;
@@ -64,7 +65,8 @@
     transition: background-color 200ms, box-shadow 200ms;
 }
 
-#radio1on,#radio1off {
+#radio1on,
+#radio1off {
     display: none;
 }
 
@@ -74,7 +76,7 @@ h1 {
     color: #fff;
 }
 
-#radio1on:checked ~ .h11 {
+#radio1on:checked~.h11 {
     z-index: 4;
     visibility: hidden;
 }
@@ -86,14 +88,14 @@ h1 {
 
 /* masodik oldal */
 
-#masodikoldal{
+#masodikoldal {
     position: relative;
     height: 100vh;
     background: #FFBE0B;
     font-family: sans-serif;
 }
 
-#masodikoldal .cim{
+#masodikoldal .cim {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,13 +108,13 @@ h1 {
     color: #fff;
 }
 
-#masodikoldal .alja{
+#masodikoldal .alja {
     padding: 10px;
     position: relative;
     height: 90vh;
 }
 
-#masodikoldal img{
+#masodikoldal img {
     position: absolute;
     top: 100%;
     left: 100%;
@@ -120,20 +122,110 @@ h1 {
     z-index: 1;
 }
 
-#masodikoldal .card{
+#masodikoldal .card {
     position: relative;
     background: #EDB419;
     width: 70%;
     height: 80vh;
     border-radius: 10px;
-    box-shadow: 10px 10px 0 rgb(0, 0, 0, 40%);
     z-index: 2;
 }
 
-#masodikoldal .card .leiras{
-    background: #007;
+#masodikoldal #gombocska{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
 }
 
-#masodikoldal .card #masodikoldalgomb:checked + .leiras{
-    background: #fff;
+#masodikoldal .card .tartalom{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #EDB419;
+    background: #525252;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
+    padding: 20px;
 }
+
+/* #gombocska:checked ~ .tartalom {
+    box-shadow: inset 10px 10px 0 rgba(0, 0, 0, 0.4);
+    background: #525252;
+} */
+
+/* #gombocska:checked ~ .kod {
+    display: none;
+}
+
+#gombocska:checked ~ .leiras {
+    display: none;
+} */
+
+#masodikoldal .card .tartalom .leiras{
+    position: relative;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: 100%;
+    color: #fff;
+}
+
+#masodikoldal .card .tartalom .leiras .fejlec,
+#masodikoldal .card .tartalom .leiras .lablec{
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#masodikoldal .card .tartalom .leiras .fejlec{
+    border-bottom: 3px solid #fff;
+    
+}
+
+#masodikoldal .card .tartalom .leiras .lablec{
+    border-top: 3px solid #fff;
+    justify-content: right;
+}
+
+#masodikoldal .card .tartalom .leiras .kozep{
+    padding: 10px 0;
+    font-size: 1.1em;
+    overflow-y: auto;
+}
+
+#masodikoldal .card .tartalom .kod{
+    position: relative;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: 100%;
+    color: #fff;
+    font-family: monospace;
+}
+
+#masodikoldal .card .tartalom .kod .fejlec,
+#masodikoldal .card .tartalom .kod .lablec{
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#masodikoldal .card .tartalom .kod .fejlec{
+    border-bottom: 3px solid #fff;
+    
+}
+
+#masodikoldal .card .tartalom .kod .lablec{
+    border-top: 3px solid #fff;
+    justify-content: right;
+}
+
+#masodikoldal .card .tartalom .kod .kozep{
+    padding: 10px 0;
+    font-size: 1.1em;
+    overflow-y: auto;
+}
+
