@@ -199,10 +199,13 @@ h1 {
 
 #masodikoldal img {
     position: absolute;
-    top: 100%;
-    left: 100%;
-    transform: translate(-100%, -100%);
+    right: 0;
+    bottom: 0;
     z-index: 1;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 #masodikoldal .card {
@@ -214,15 +217,17 @@ h1 {
     z-index: 2;
 }
 
-#masodikoldal #gombocska {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+#masodikoldal label{
     cursor: pointer;
-    z-index: 5;
 }
+
+#masodikoldal #gombocska {
+    display: none;
+    top: 0px;
+    cursor: pointer;
+    z-index: 4;
+}
+
 
 #masodikoldal .card .tartalom {
     position: relative;
@@ -257,10 +262,9 @@ h1 {
 #masodikoldal .card .tartalom .leiras {
     position: relative;
     display: grid;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 45px calc(100% - 90px) 45px;
     height: 100%;
     color: #fff;
-
 }
 
 #masodikoldal .card .tartalom .leiras .fejlec,
@@ -282,9 +286,10 @@ h1 {
 }
 
 #masodikoldal .card .tartalom .leiras .kozep {
-    padding: 10px 0;
+    margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
+    /* text-align: justify; */
 }
 
 
@@ -304,7 +309,7 @@ h1 {
 #masodikoldal .card .tartalom .kod {
     position: relative;
     display: grid;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 45px calc(100% - 90px) 45px;
     height: 100%;
     color: #fff;
 }
@@ -328,7 +333,13 @@ h1 {
 }
 
 #masodikoldal .card .tartalom .kod .kozep {
-    padding: 10px 0;
+    margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
+}
+
+@media (max-width: 560px) {
+    #masodikoldal .card {
+        width: calc(100% - 10px);
+    }
 }
