@@ -61,6 +61,7 @@ h1 {
 /* masodik oldal */
 
 #masodikoldal{
+    position: relative;
     height: 100vh;
     background: #FFBE0B;
     font-family: sans-serif;
@@ -77,4 +78,32 @@ h1 {
     letter-spacing: 2px;
     height: 10vh;
     color: #fff;
+}
+
+#masodikoldal .alja{
+    padding: 10px;
+    position: relative;
+    height: 90vh;
+}
+
+#masodikoldal img{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    z-index: 1;
+}
+
+#masodikoldal .card{
+    position: relative;
+    background: #EDB419;
+    width: 70%;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 rgb(0, 0, 0, 40%);
+    z-index: 2;
+}
+
+#masodikoldal .card .leiras{
+
 }
