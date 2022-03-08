@@ -36,3 +36,4 @@ szövegdoboz háttér: #EDB419
 szövegdoboz nyomva háttér: #525252
 szöveg: #272727
 
+8. oldal == 3. odldal
