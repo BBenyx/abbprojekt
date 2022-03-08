@@ -4,3 +4,35 @@ háttér: #3A86FF
 gomb háttér: #3470CE
 gomb nyomva háttér: #525252
 betű: #fff
+
+
+3. oldal
+háttér: #FF006E
+szövegdoboz háttér: #E8126E
+szövegdoboz nyomva háttér: #525252
+szöveg: #272727
+
+4. oldal
+háttér: #8338EC
+szövegdoboz háttér: #6B25CE
+szövegdoboz nyomva háttér: #525252
+szöveg: #fff
+
+5. oldal
+háttér: #FB5607
+szövegdoboz háttér: #DD4F0B
+szövegdoboz nyomva háttér: #525252
+szöveg: #fff
+
+6. oldal
+háttér: #3A86FF
+szövegdoboz háttér: #3470CE
+szövegdoboz nyomva háttér: #525252
+szöveg: #fff
+
+7. oldal
+háttér: #FFBE0B
+szövegdoboz háttér: #EDB419
+szövegdoboz nyomva háttér: #525252
+szöveg: #272727
+
