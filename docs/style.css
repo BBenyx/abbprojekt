@@ -18,6 +18,8 @@
     border-radius: 10px;
 }
 
+    /*első oldal*/
+
 #cimek {
     padding-top: 80px;
     margin-bottom: -40px;
@@ -49,6 +51,12 @@
 
 #jobb {
     float: left;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
 }
 
 .h11,
@@ -91,12 +99,7 @@
     transition: 200ms;
 }
 
-.h11 div,
-.h21 div,
-.h31 div,
-.h41 div,
-.h51 div,
-.h61 div {
+.karika {
     margin-top: -40px;
     display: inline-block;
     padding: 18px;
@@ -162,12 +165,6 @@
     display: none;
 }
 
-h1 {
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-}
-
 #radio1on:checked~.h11,
 #radio2on:checked~.h21,
 #radio3on:checked~.h31,
@@ -181,6 +178,79 @@ h1 {
 #elsooldal {
     height: 100vh;
     background: #3A86FF;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        text-align: left;
+        font-size: 16px;
+    }
+    .h11,
+    .h21,
+    .h31,
+    .h41,
+    .h51,
+    .h61 {
+        margin: 0;
+        width: 93%;
+        height: 100px;
+        padding: 20px;
+        padding-top: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .h12,
+    .h22,
+    .h32,
+    .h42,
+    .h52,
+    .h62 {
+        margin: 0;
+        width: 93%;
+        height: 100px;
+        padding: 20px;
+        padding-top: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #jobb {
+        float: none;
+    }
+    #gombcontainer {
+        display: unset;
+    }
+    .gombcont {
+        margin: 10px 0;
+        width: 90%;
+        position: relative;
+    }
+    #telomargin {
+        margin-top: 80px;
+    }
+    #elsooldal {
+        height: 180vh;
+    }
+    .karika {
+        margin-top: -40px;
+        display: inline-block;
+        padding: 18px;
+        padding-bottom: 38px;
+        height: 25px;
+    }
+    #cimek {
+        text-align: center;
+    }
+    #elsooldal img{
+        position: absolute;
+        top: 180%;
+        left: 75%;
+        transform: translate(-100%, -100%);
+        z-index: 1;
+    }
 }
 
 /* masodik oldal */
