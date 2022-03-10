@@ -343,3 +343,180 @@ h1 {
         width: calc(100% - 10px);
     }
 }
+
+
+/* negyedik oldal */
+
+#negyedikoldal {
+    position: relative;
+    height: 100vh;
+    background: #8338EC;
+    font-family: sans-serif;
+}
+
+#negyedikoldal .cim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 10px 10px 0 rgb(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+    height: 10vh;
+    color: #fff;
+}
+
+#negyedikoldal .alja {
+    padding: 10px;
+    position: relative;
+    height: 90vh;
+}
+
+#negyedikoldal img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#negyedikoldal .card {
+    position: relative;
+    background: #6B25CE;
+    width: 70%;
+    height: 80vh;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#negyedikoldal label{
+    cursor: pointer;
+}
+
+#negyedikoldal #gombocska {
+    display: none;
+    top: 0px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+
+#negyedikoldal .card .tartalom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+
+#gombocska:checked~#negyedikoldalleiras {
+    visibility: hidden;
+}
+
+#gombocska:checked~#negyedikoldalkod {
+    visibility: visible;
+}
+
+#negyedikoldal .card .tartalom #negyedikoldalleiras {
+    position: absolute;
+    background: #6B25CE;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
+    border: 1px solid #272727;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 3;
+}
+
+#negyedikoldal .card .tartalom .leiras {
+    position: relative;
+    display: grid;
+    grid-template-rows: 45px calc(100% - 90px) 45px;
+    height: 100%;
+    color: #fff;
+}
+
+#negyedikoldal .card .tartalom .leiras .fejlec,
+#negyedikoldal .card .tartalom .leiras .lablec {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#negyedikoldal .card .tartalom .leiras .fejlec {
+    border-bottom: 3px solid #fff;
+
+}
+
+#negyedikoldal .card .tartalom .leiras .lablec {
+    border-top: 3px solid #fff;
+    justify-content: right;
+}
+
+#negyedikoldal .card .tartalom .leiras .kozep {
+    margin: 10px 0;
+    font-size: 1.2em;
+    overflow-y: auto;
+    /* text-align: justify; */
+}
+
+
+#negyedikoldal .card .tartalom #negyedikoldalkod {
+    position: absolute;
+    background: #58513e;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 0 rgb(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 2;
+}
+
+#negyedikoldal .card .tartalom .kod {
+    position: relative;
+    display: grid;
+    grid-template-rows: 45px calc(100% - 90px) 45px;
+    height: 100%;
+    color: #fff;
+}
+
+#negyedikoldal .card .tartalom .kod .fejlec,
+#negyedikoldal .card .tartalom .kod .lablec {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#negyedikoldal .card .tartalom .kod .fejlec {
+    border-bottom: 3px solid #fff;
+
+}
+
+#negyedikoldal .card .tartalom .kod .lablec {
+    border-top: 3px solid #fff;
+    justify-content: right;
+}
+
+#negyedikoldal .card .tartalom .kod .kozep {
+    margin: 10px 0;
+    font-size: 1.2em;
+    overflow-y: auto;
+}
+
+@media (max-width: 560px) {
+    #negyedikoldal .card {
+        width: calc(100% - 10px);
+    }
+}
