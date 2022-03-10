@@ -20,7 +20,7 @@
 
     /*első oldal*/
 
-#cimek {
+.cimek {
     padding-top: 80px;
     margin-bottom: -40px;
     text-transform: uppercase;
@@ -426,4 +426,49 @@ h1 {
     #masodikoldal .card {
         width: calc(100% - 10px);
     }
+}
+
+/*Ötödik oldal*/
+
+#otodikoldal {
+    height: 100vh;
+    background: #c50;
+}
+
+.gombjoker {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin-top: 100px;
+    background-color: #000;
+}
+
+#radiojon, #radiojoff {
+    display: none;
+}
+
+#j1 {
+    margin: 10px;
+    width: 90%;
+    height: 400px;
+    padding: 20px;
+    background-color: #a30;
+    box-shadow: 7px 7px 3px #620;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 5;
+    font-family: sans-serif;
+}
+
+#j2 {
+    margin: 10px;
+    width: 90%;
+    height: 400px;
+    padding: 20px;
+    background-color: #525252;
+    box-shadow: inset 7px 7px 3px #333;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 4;
+    font-family: monospace;
 }
