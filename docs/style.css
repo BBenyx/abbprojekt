@@ -491,7 +491,7 @@ h1 {
 
 #harmadikoldal img {
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: 0;
     z-index: 1;
     width: auto;
@@ -499,6 +499,7 @@ h1 {
     object-fit: cover;
     object-position: center;
     transform: scaleX(-1);
+    height: 500px;
 }
 
 #harmadikoldal .card .tartalom {
