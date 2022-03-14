@@ -613,8 +613,6 @@ h1 {
     cursor: pointer;
 }
 
-
-
 /* negyedik oldal */
 
 #negyedikoldal {
@@ -878,4 +876,177 @@ h1 {
 #radiojon:checked ~ #j1 {
     z-index: 4;
     visibility: hidden;
+/* Hatodik oldal */
+
+#hatodikoldal {
+    position: relative;
+    height: 100vh;
+    background: #3A86FF;
+    font-family: sans-serif;
+}
+
+#hatodikoldal .cim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 10px 10px 0 rgb(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+    height: 10vh;
+    color: #fff;
+}
+
+#hatodikoldal .card {
+    position: relative;
+    background: #3470CE;
+    width: 70%;
+    height: 40vh;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#hatodikoldal #hatodikgombocska {
+    display: none;
+    top: 0px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#hatodikoldal .alja {
+    padding: 10px;
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#hatodikoldal img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scaleX(-1);
+    height: 500px;
+}
+
+#hatodikoldal .card .tartalom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+#hatodikgombocska:checked~#hatodikoldalleiras {
+    visibility: hidden;
+}
+
+#hatodikgombocska:checked~#hatodikoldalkod {
+    visibility: visible;
+}
+
+#hatodikoldal .card .tartalom .leiras .fejlec,
+#hatodikoldal .card .tartalom .leiras .lablec {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#hatodikoldal .card .tartalom #hatodikoldalkod .kod .fejlec,
+#hatodikoldal .card .tartalom #hatodikoldalkod .kod .lablec {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#hatodikoldal .card .tartalom #hatodikoldalkod .kod .fejlec {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+
+}
+
+#hatodikoldal .card .tartalom #hatodikoldalkod .kozep {
+    color: #fff;
+}
+
+#hatodikoldal .card .tartalom #hatodikoldalkod .kod .lablec{
+    border-top: 3px solid #fff;
+    justify-content: right;
+    color: #fff;
+}
+
+#hatodikoldal .card .tartalom #hatodikoldalleiras {
+    position: absolute;
+    background: #3470CE;
+    border-radius: 10px;
+    border: 1px solid #272727;
+    box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 3;
+}
+
+#hatodikoldal .card .tartalom .leiras {
+    position: relative;
+    display: grid;
+    grid-template-rows: 45px calc(100% - 90px) 45px;
+    height: 100%;
+    color: #fff;
+}
+
+#hatodikoldal .card .tartalom .leiras .fejlec {
+    border-bottom: 3px solid #fff;
+
+}
+
+#hatodikoldal .card .tartalom .leiras .lablec {
+    border-top: 3px solid #fff;
+    justify-content: right;
+}
+
+#hatodikoldal .card .tartalom .leiras .kozep {
+    margin: 10px 0;
+    font-size: 1.2em;
+    overflow-y: auto;
+    /* text-align: justify; */
+}
+
+#hatodikoldal .card .tartalom #hatodikoldal .kod .kozep {
+    margin: 3px 0;
+    font-size: 1.2em;
+    overflow-y: auto;
+    color: #fff;
+    /* text-align: justify; */
+}
+
+#hatodikoldal .card .tartalom #hatodikoldalkod {
+    position: absolute;
+    background: #58513e;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 0 rgb(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    z-index: 2;
+    color: #fff;
+}
+
+#hatodikoldal label{
+    cursor: pointer;
 }
