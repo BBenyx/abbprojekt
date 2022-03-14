@@ -76,45 +76,50 @@ nav {
     text-transform: uppercase;
     font-family: sans-serif;
     font-size: 1.3em;
+    background:#313131;
     box-shadow: 10px 10px rgb(0, 0, 0, 0.4);
     border-radius: 5px;
     color: #fff;
+    transition: 0.3s;
 }
 
-.menu li:nth-child(1) a{
+.menu li:nth-child(1) a:hover{
     background: #3A86FF;
+    transition: 0.3s;
 }
 
-.menu li:nth-child(2) a{
+.menu li:nth-child(2) a:hover{
     background: #FFBE0B;
 }
 
-.menu li:nth-child(3) a{
+.menu li:nth-child(3) a:hover{
     background: #FF006E;
 }
 
-.menu li:nth-child(4) a{
+.menu li:nth-child(4) a:hover{
     background: #8338EC;
 }
 
-.menu li:nth-child(5) a{
+.menu li:nth-child(5) a:hover{
     background: #FB5607;
 }
 
-.menu li:nth-child(6) a{
+.menu li:nth-child(6) a:hover{
     background: #3A86FF;
 }
 
-.menu li:nth-child(7) a{
+.menu li:nth-child(7) a:hover{
     background: #FFBE0B;
+    color: #272727;
 }
 
-.menu li:nth-child(8) a{
+.menu li:nth-child(8) a:hover{
     background: #FF006E;
 }
 
 .menu a:hover{
     box-shadow: inset 10px 10px 0 rgb(0, 0, 0, 0.4);
+    letter-spacing: 2px;
 }
 
 
@@ -122,7 +127,7 @@ nav ul{
     padding: 20px;
     display: grid;
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
-    grid-auto-rows: 20vh;
+    grid-auto-rows: 18vh;
     grid-gap: 20px;
     width: 100%;
     height: 100%;
@@ -185,14 +190,19 @@ nav ul li{
         padding: 20px;
         display: grid;
         grid-template-columns: calc(100% - 10px);
-        grid-auto-rows: 13vh;
+        grid-auto-rows: 11vh;
         grid-gap: 20px;
         width: 100%;
-        height: 100%;
+        height: 200vh;
+        overflow-y: auto;
     }
-
+    
     nav{
         overflow-y: auto;
+    }
+
+    .menucheck:checked ~ nav{
+        max-height: 200vh;
     }
 }
 
@@ -639,6 +649,7 @@ h1 {
     height: 100vh;
     background: #FF006E;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 #harmadikoldal .cim {
@@ -682,7 +693,7 @@ h1 {
 
 #harmadikoldal img {
     position: absolute;
-    left: 20px;
+    left: 0;
     bottom: 0;
     z-index: 1;
     width: auto;
@@ -690,6 +701,7 @@ h1 {
     object-fit: cover;
     object-position: center;
     transform: scaleX(-1);
+    height: 500px;
 }
 
 #harmadikoldal .card .tartalom {
