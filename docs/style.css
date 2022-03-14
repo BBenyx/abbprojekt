@@ -935,6 +935,10 @@ h1 {
 
 }
 
+#hatodikoldal .card .tartalom #hatodikoldalkod .kozep {
+    color: #fff;
+}
+
 #hatodikoldal .card .tartalom #hatodikoldalkod .kod .lablec{
     border-top: 3px solid #fff;
     justify-content: right;
@@ -999,6 +1003,7 @@ h1 {
     height: 100%;
     padding: 20px;
     z-index: 2;
+    color: #fff;
 }
 
 #hatodikoldal label{
