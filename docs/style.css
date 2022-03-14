@@ -837,14 +837,14 @@ h1 {
 
 /* Hatodik oldal */
 
-#harmadikoldal {
+#hatodikoldal {
     position: relative;
     height: 100vh;
     background: #FF006E;
     font-family: sans-serif;
 }
 
-#harmadikoldal .cim {
+#hatodikoldal .cim {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -857,7 +857,7 @@ h1 {
     color: #272727;
 }
 
-#harmadikoldal .card {
+#hatodikoldal .card {
     position: relative;
     background: #E8126E;
     width: 70%;
@@ -866,14 +866,14 @@ h1 {
     z-index: 2;
 }
 
-#harmadikoldal #harmadikgombocska {
+#hatodikoldal #hatodikgombocska {
     display: none;
     top: 0px;
     cursor: pointer;
     z-index: 4;
 }
 
-#harmadikoldal .alja {
+#hatodikoldal .alja {
     padding: 10px;
     position: relative;
     height: 90vh;
@@ -882,7 +882,7 @@ h1 {
     justify-content: flex-end;
 }
 
-#harmadikoldal img {
+#hatodikoldal img {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -895,7 +895,7 @@ h1 {
     height: 500px;
 }
 
-#harmadikoldal .card .tartalom {
+#hatodikoldal .card .tartalom {
     position: relative;
     width: 100%;
     height: 100%;
@@ -903,31 +903,31 @@ h1 {
     font-family: monospace;
 }
 
-#harmadikgombocska:checked~#harmadikoldalleiras {
+#hatodikgombocska:checked~#hatodikoldalleiras {
     visibility: hidden;
 }
 
-#harmadikgombocska:checked~#harmadikoldalkod {
+#hatodikgombocska:checked~#hatodikoldalkod {
     visibility: visible;
 }
 
-#harmadikoldal .card .tartalom .leiras .fejlec,
-#harmadikoldal .card .tartalom .leiras .lablec {
+#hatodikoldal .card .tartalom .leiras .fejlec,
+#hatodikoldal .card .tartalom .leiras .lablec {
     display: flex;
     align-items: center;
     font-size: 2em;
     font-weight: bold;
 }
 
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .fejlec,
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .lablec {
+#hatodikoldal .card .tartalom #hatodikoldalkod .kod .fejlec,
+#hatodikoldal .card .tartalom #hatodikoldalkod .kod .lablec {
     display: flex;
     align-items: center;
     font-size: 2em;
     font-weight: bold;
 }
 
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .fejlec {
+#hatodikoldal .card .tartalom #hatodikoldalkod .kod .fejlec {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 3px solid #fff;
@@ -935,13 +935,13 @@ h1 {
 
 }
 
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .lablec{
+#hatodikoldal .card .tartalom #hatodikoldalkod .kod .lablec{
     border-top: 3px solid #fff;
     justify-content: right;
     color: #fff;
 }
 
-#harmadikoldal .card .tartalom #harmadikoldalleiras {
+#hatodikoldal .card .tartalom #hatodikoldalleiras {
     position: absolute;
     background: #E8126E;
     border-radius: 10px;
@@ -955,7 +955,7 @@ h1 {
     z-index: 3;
 }
 
-#harmadikoldal .card .tartalom .leiras {
+#hatodikoldal .card .tartalom .leiras {
     position: relative;
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
@@ -963,24 +963,24 @@ h1 {
     color: #272727;
 }
 
-#harmadikoldal .card .tartalom .leiras .fejlec {
+#hatodikoldal .card .tartalom .leiras .fejlec {
     border-bottom: 3px solid #272727;
 
 }
 
-#harmadikoldal .card .tartalom .leiras .lablec {
+#hatodikoldal .card .tartalom .leiras .lablec {
     border-top: 3px solid #272727;
     justify-content: right;
 }
 
-#harmadikoldal .card .tartalom .leiras .kozep {
+#hatodikoldal .card .tartalom .leiras .kozep {
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
     /* text-align: justify; */
 }
 
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .kozep {
+#hatodikoldal .card .tartalom #hatodikoldal .kod .kozep {
     margin: 3px 0;
     font-size: 1.2em;
     overflow-y: auto;
@@ -988,7 +988,7 @@ h1 {
     /* text-align: justify; */
 }
 
-#harmadikoldal .card .tartalom #harmadikoldalkod {
+#hatodikoldal .card .tartalom #hatodikoldalkod {
     position: absolute;
     background: #58513e;
     border-radius: 10px;
@@ -1001,6 +1001,6 @@ h1 {
     z-index: 2;
 }
 
-#harmadikoldal label{
+#hatodikoldal label{
     cursor: pointer;
 }
