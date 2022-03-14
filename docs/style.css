@@ -533,14 +533,18 @@ h1 {
     font-weight: bold;
 }
 
-#masodikoldal .card .tartalom .kod .fejlec {
+#harmadikoldal .card .tartalom #harmadikoldalkod .kod .fejlec {
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 3px solid #fff;
+    color: #fff;
 
 }
 
-#masodikoldal .card .tartalom .kod .lablec {
+#harmadikoldal .card .tartalom #harmadikoldalkod .kod .lablec{
     border-top: 3px solid #fff;
     justify-content: right;
+    color: #fff;
 }
 
 #harmadikoldal .card .tartalom #harmadikoldalleiras {
@@ -579,6 +583,14 @@ h1 {
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
+    /* text-align: justify; */
+}
+
+#harmadikoldal .card .tartalom #harmadikoldalkod .kod .kozep {
+    margin: 3px 0;
+    font-size: 1.2em;
+    overflow-y: auto;
+    color: #fff;
     /* text-align: justify; */
 }
 
