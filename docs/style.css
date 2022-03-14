@@ -525,6 +525,24 @@ h1 {
     font-weight: bold;
 }
 
+#harmadikoldal .card .tartalom #harmadikoldalkod .kod .fejlec,
+#harmadikoldal .card .tartalom #harmadikoldalkod .kod .lablec {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#masodikoldal .card .tartalom .kod .fejlec {
+    border-bottom: 3px solid #fff;
+
+}
+
+#masodikoldal .card .tartalom .kod .lablec {
+    border-top: 3px solid #fff;
+    justify-content: right;
+}
+
 #harmadikoldal .card .tartalom #harmadikoldalleiras {
     position: absolute;
     background: #E8126E;
