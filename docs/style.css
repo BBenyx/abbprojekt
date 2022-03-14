@@ -840,7 +840,7 @@ h1 {
 #hatodikoldal {
     position: relative;
     height: 100vh;
-    background: #FF006E;
+    background: #3A86FF;
     font-family: sans-serif;
 }
 
@@ -854,12 +854,12 @@ h1 {
     text-shadow: 10px 10px 0 rgb(0, 0, 0, 0.25);
     letter-spacing: 2px;
     height: 10vh;
-    color: #272727;
+    color: #fff;
 }
 
 #hatodikoldal .card {
     position: relative;
-    background: #E8126E;
+    background: #3470CE;
     width: 70%;
     height: 40vh;
     border-radius: 10px;
@@ -943,7 +943,7 @@ h1 {
 
 #hatodikoldal .card .tartalom #hatodikoldalleiras {
     position: absolute;
-    background: #E8126E;
+    background: #3470CE;
     border-radius: 10px;
     border: 1px solid #272727;
     box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
