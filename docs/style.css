@@ -960,16 +960,16 @@ h1 {
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
     height: 100%;
-    color: #272727;
+    color: #fff;
 }
 
 #hatodikoldal .card .tartalom .leiras .fejlec {
-    border-bottom: 3px solid #272727;
+    border-bottom: 3px solid #fff;
 
 }
 
 #hatodikoldal .card .tartalom .leiras .lablec {
-    border-top: 3px solid #272727;
+    border-top: 3px solid #fff;
     justify-content: right;
 }
 
