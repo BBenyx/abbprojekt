@@ -639,6 +639,7 @@ h1 {
     height: 100vh;
     background: #FF006E;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 #harmadikoldal .cim {
@@ -682,7 +683,7 @@ h1 {
 
 #harmadikoldal img {
     position: absolute;
-    left: 20px;
+    left: 0;
     bottom: 0;
     z-index: 1;
     width: auto;
@@ -690,6 +691,7 @@ h1 {
     object-fit: cover;
     object-position: center;
     transform: scaleX(-1);
+    height: 500px;
 }
 
 #harmadikoldal .card .tartalom {
