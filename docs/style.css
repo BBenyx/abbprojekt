@@ -267,6 +267,19 @@ h1 {
     }
 }
 
+@media (max-width: 380px) {
+    #elsooldal {
+        height: 175vh;
+    }
+    #elsooldal img{
+        position: absolute;
+        top: 175%;
+        left: 75%;
+        transform: translate(-100%, -100%);
+        z-index: 1;
+    }
+}
+
 /* masodik oldal */
 
 #masodikoldal {
@@ -876,6 +889,22 @@ h1 {
 #radiojon:checked ~ #j1 {
     z-index: 4;
     visibility: hidden;
+}
+
+@media (max-width: 1050px) {
+    #j1,#j2 {
+        width: 110%;
+    }
+}
+@media (max-width: 850px) {
+    #j1,#j2 {
+        height: 700px;
+    }
+    #otodikoldal {
+        height: 160vh;
+    }
+}
+
 /* Hatodik oldal */
 
 #hatodikoldal {
