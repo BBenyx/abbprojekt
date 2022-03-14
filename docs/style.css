@@ -32,8 +32,9 @@
     border: 4px solid #58513e;
 }
 
+/*Első oldal*/
 
-#cimek {
+.cimek {
     padding-top: 80px;
     margin-bottom: -40px;
     text-transform: uppercase;
@@ -245,7 +246,7 @@ h1 {
         margin-top: 80px;
     }
     #elsooldal {
-        height: 180vh;
+        height: 140vh;
     }
     .karika {
         margin-top: -40px;
@@ -254,12 +255,12 @@ h1 {
         padding-bottom: 38px;
         height: 25px;
     }
-    #cimek {
+    .cimek {
         text-align: center;
     }
     #elsooldal img{
         position: absolute;
-        top: 180%;
+        top: 140%;
         left: 75%;
         transform: translate(-100%, -100%);
         z-index: 1;
@@ -794,7 +795,7 @@ h1 {
 
 #otodikoldal {
     height: 100vh;
-    background: #c50;
+    background: #FB5607;
 }
 
 .gombjoker {
@@ -802,7 +803,6 @@ h1 {
     width: 70%;
     height: auto;
     margin-top: 100px;
-    background-color: #000;
 }
 
 #radiojon, #radiojoff {
@@ -814,12 +814,13 @@ h1 {
     width: 90%;
     height: 400px;
     padding: 20px;
-    background-color: #a30;
+    background-color: #DD4F0B;
     box-shadow: 7px 7px 3px #620;
     border-radius: 3px;
     position: absolute;
     z-index: 5;
     font-family: sans-serif;
+    border: 1px solid #000;
 }
 
 #j2 {
@@ -833,4 +834,48 @@ h1 {
     position: absolute;
     z-index: 4;
     font-family: monospace;
+}
+
+#otodikoldal h2{
+    font-size: 35px;
+    text-align: left;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+}
+
+#otodikoldal p {
+    color: #fff;
+    width: 65%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#otodikoldal #balspan {
+    text-align: left;
+}
+
+#spanvonal1 {
+    border-bottom: 2px solid #fff;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+#spanvonal2 {
+    border-top: 2px solid #fff;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#spanmargin {
+    margin-left: 30px;
+}
+
+#radiojon:checked ~ #j1 {
+    z-index: 4;
+    visibility: hidden;
 }
