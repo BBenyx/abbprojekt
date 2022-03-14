@@ -832,6 +832,7 @@ h1 {
     z-index: 5;
     font-family: sans-serif;
     border: 1px solid #000;
+    cursor: pointer;
 }
 
 #j2 {
@@ -845,6 +846,7 @@ h1 {
     position: absolute;
     z-index: 4;
     font-family: monospace;
+    cursor: pointer;
 }
 
 #otodikoldal h2{
