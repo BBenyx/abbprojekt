@@ -47,7 +47,7 @@ nav ul {
     list-style: none;
 }
 
-#dropdown{
+#dropdown {
     position: fixed;
     width: 100%;
     background: #272727;
@@ -66,7 +66,7 @@ nav {
     transition: max-height .5s ease-out;
 }
 
-.menu a{
+.menu a {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -76,54 +76,54 @@ nav {
     text-transform: uppercase;
     font-family: sans-serif;
     font-size: 1.3em;
-    background:#313131;
+    background: #313131;
     box-shadow: 10px 10px rgb(0, 0, 0, 0.4);
     border-radius: 5px;
     color: #fff;
     transition: 0.3s;
 }
 
-.menu li:nth-child(1) a:hover{
+.menu li:nth-child(1) a:hover {
     background: #3A86FF;
     transition: 0.3s;
 }
 
-.menu li:nth-child(2) a:hover{
+.menu li:nth-child(2) a:hover {
     background: #FFBE0B;
 }
 
-.menu li:nth-child(3) a:hover{
+.menu li:nth-child(3) a:hover {
     background: #FF006E;
 }
 
-.menu li:nth-child(4) a:hover{
+.menu li:nth-child(4) a:hover {
     background: #8338EC;
 }
 
-.menu li:nth-child(5) a:hover{
+.menu li:nth-child(5) a:hover {
     background: #FB5607;
 }
 
-.menu li:nth-child(6) a:hover{
+.menu li:nth-child(6) a:hover {
     background: #3A86FF;
 }
 
-.menu li:nth-child(7) a:hover{
+.menu li:nth-child(7) a:hover {
     background: #FFBE0B;
     color: #272727;
 }
 
-.menu li:nth-child(8) a:hover{
+.menu li:nth-child(8) a:hover {
     background: #FF006E;
 }
 
-.menu a:hover{
+.menu a:hover {
     box-shadow: inset 10px 10px 0 rgb(0, 0, 0, 0.4);
     letter-spacing: 2px;
 }
 
 
-nav ul{
+nav ul {
     padding: 20px;
     display: grid;
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
@@ -133,13 +133,13 @@ nav ul{
     height: 100%;
 }
 
-nav ul li{
+nav ul li {
     position: relative;
     border-radius: 5px;
 }
 
 
-.hamb{
+.hamb {
     position: relative;
     cursor: pointer;
     float: left;
@@ -147,28 +147,29 @@ nav ul li{
     height: 60px;
 }
 
-.hamb:hover .menuicon{
+.hamb:hover .menuicon {
     animation: menueffect 1s;
 }
 
-@keyframes menueffect{
-    0%{
+@keyframes menueffect {
+    0% {
         width: 80%;
     }
-    40%{
+
+    40% {
         width: 50%;
     }
 
-    75%{
+    75% {
         width: 100%;
     }
 
-    100%{
+    100% {
         width: 80%;
     }
 }
 
-.menuicon{
+.menuicon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -176,17 +177,17 @@ nav ul li{
     width: 80%;
 }
 
-#menucheck{
+#menucheck {
     display: none;
 }
 
-.menucheck:checked ~ nav{
+.menucheck:checked~nav {
     max-height: 100%;
 }
 
 
-@media (max-width: 900px){
-    nav ul{
+@media (max-width: 900px) {
+    nav ul {
         padding: 20px;
         display: grid;
         grid-template-columns: calc(100% - 10px);
@@ -196,16 +197,30 @@ nav ul li{
         height: 200vh;
         overflow-y: auto;
     }
-    
-    nav{
+
+    nav {
         overflow-y: auto;
     }
 
-    .menucheck:checked ~ nav{
+    .menucheck:checked~nav {
         max-height: 200vh;
     }
 }
 
+
+/* scrolling */
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+article{
+    scroll-snap-align: center;
+}
 
 /*Első oldal*/
 
@@ -243,9 +258,11 @@ nav ul li{
 }
 
 h1 {
+    position: relative;
     font-size: 20px;
     text-align: center;
     color: #fff;
+    z-index: 2;
 }
 
 .h11,
@@ -984,7 +1001,7 @@ h1 {
     cursor: pointer;
 }
 
-#negyedikoldal #gombocska {
+#negyedikoldal #negyedikoldalgombocska {
     display: none;
     top: 0px;
     cursor: pointer;
@@ -1001,11 +1018,11 @@ h1 {
 }
 
 
-#gombocska:checked~#negyedikoldalleiras {
+#negyedikoldalgombocska:checked~#negyedikoldalleiras {
     visibility: hidden;
 }
 
-#gombocska:checked~#negyedikoldalkod {
+#negyedikoldalgombocska:checked~#negyedikoldalkod {
     visibility: visible;
 }
 
@@ -1056,6 +1073,34 @@ h1 {
     /* text-align: justify; */
 }
 
+#negyedikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#negyedikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-track {
+    background-color: #6B25CE;
+}
+
+#negyedikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-thumb {
+    background-color: #6B25CE;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+#negyedikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#negyedikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-track {
+    background: #6B25CE;
+}
+
+#negyedikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #58513e;
+    border: 4px solid #6B25CE;
+}
+
 
 #negyedikoldal .card .tartalom #negyedikoldalkod {
     position: absolute;
@@ -1100,6 +1145,34 @@ h1 {
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
+}
+
+#negyedikoldal .card .tartalom .kod .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#negyedikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-track {
+    background-color: #58513e;
+}
+
+#negyedikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-thumb {
+    background-color: #58513e;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+#negyedikoldal .card .tartalom .kod .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#negyedikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-track {
+    background: #58513e;
+}
+
+#negyedikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #6B25CE;
+    border: 4px solid #58513e;
 }
 
 @media (max-width: 560px) {
