@@ -589,6 +589,34 @@ h1 {
     /* text-align: justify; */
 }
 
+#masodikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#masodikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-track {
+    background-color: #EDB419;
+}
+
+#masodikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-thumb {
+    background-color: #EDB419;
+    /* border: 5px solid rgba(0, 0, 0, 0); */
+    border-radius: 10px;
+}
+
+#masodikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#masodikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-track {
+    background: #EDB419;
+}
+
+#masodikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #58513e;
+    border: 4px solid #EDB419;
+}
+
 
 #masodikoldal .card .tartalom #masodikoldalkod {
     position: absolute;
@@ -635,6 +663,30 @@ h1 {
     overflow-y: auto;
 }
 
+#masodikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-track {
+    background-color: #58513e;
+}
+
+#masodikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-thumb {
+    background-color: #58513e;
+    /* border: 5px solid rgba(0, 0, 0, 0); */
+    border-radius: 10px;
+}
+
+#masodikoldal .card .tartalom .kod .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#masodikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-track {
+    background: #58513e;
+}
+
+#masodikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #EDB419;
+    border: 4px solid #58513e;
+}
+
 @media (max-width: 560px) {
     #masodikoldal .card {
         width: calc(100% - 10px);
@@ -643,6 +695,7 @@ h1 {
 
 
 /* Harmadik oldal */
+
 
 #harmadikoldal {
     position: relative;
@@ -662,25 +715,40 @@ h1 {
     text-shadow: 10px 10px 0 rgb(0, 0, 0, 0.25);
     letter-spacing: 2px;
     height: 30vh;
-    color: #272727;
+    color: #fff;
 }
 
 #harmadikoldal .alja {
     padding: 10px;
     position: relative;
     height: 70vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+}
+
+#harmadikoldal img {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scaleX(-1);
 }
 
 #harmadikoldal .card {
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 0;
     background: #E8126E;
-    width: 70%;
-    height: 40vh;
-    border-radius: 10px;
+    width: 60%;
+    height: 45vh;
+    border-radius: 10px 0 0 10px;
     z-index: 2;
+}
+
+#harmadikoldal label {
+    cursor: pointer;
 }
 
 #harmadikoldal #harmadikgombocska {
@@ -691,19 +759,6 @@ h1 {
 }
 
 
-#harmadikoldal img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transform: scaleX(-1);
-    height: 500px;
-}
-
 #harmadikoldal .card .tartalom {
     position: relative;
     width: 100%;
@@ -711,6 +766,7 @@ h1 {
     border-radius: 10px;
     font-family: monospace;
 }
+
 
 #harmadikgombocska:checked~#harmadikoldalleiras {
     visibility: hidden;
@@ -720,41 +776,10 @@ h1 {
     visibility: visible;
 }
 
-#harmadikoldal .card .tartalom .leiras .fejlec,
-#harmadikoldal .card .tartalom .leiras .lablec {
-    display: flex;
-    align-items: center;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .fejlec,
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .lablec {
-    display: flex;
-    align-items: center;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .fejlec {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #fff;
-    color: #fff;
-
-}
-
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .lablec {
-    border-top: 3px solid #fff;
-    justify-content: right;
-    color: #fff;
-}
-
 #harmadikoldal .card .tartalom #harmadikoldalleiras {
     position: absolute;
     background: #E8126E;
-    border-radius: 10px;
-    border: 1px solid #272727;
+    border-radius: 10px 0 0 10px;
     box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
     top: 0;
     left: 0;
@@ -769,16 +794,24 @@ h1 {
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
     height: 100%;
-    color: #272727;
+    color: #fff;
+}
+
+#harmadikoldal .card .tartalom .leiras .fejlec,
+#harmadikoldal .card .tartalom .leiras .lablec {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 #harmadikoldal .card .tartalom .leiras .fejlec {
-    border-bottom: 3px solid #272727;
+    border-bottom: 3px solid #fff;
 
 }
 
 #harmadikoldal .card .tartalom .leiras .lablec {
-    border-top: 3px solid #272727;
+    border-top: 3px solid #fff;
     justify-content: right;
 }
 
@@ -789,18 +822,39 @@ h1 {
     /* text-align: justify; */
 }
 
-#harmadikoldal .card .tartalom #harmadikoldalkod .kod .kozep {
-    margin: 3px 0;
-    font-size: 1.2em;
-    overflow-y: auto;
-    color: #fff;
-    /* text-align: justify; */
+#harmadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar {
+    width: 15px;
 }
+
+#harmadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#harmadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-thumb {
+    background-color: #E8126E;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+#harmadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#harmadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-track {
+    background: #E8126E;
+}
+
+#harmadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #58513e;
+    border: 4px solid #E8126E;
+}
+
 
 #harmadikoldal .card .tartalom #harmadikoldalkod {
     position: absolute;
     background: #58513e;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     box-shadow: inset 10px 10px 0 rgb(0, 0, 0, 0.4);
     top: 0;
     left: 0;
@@ -810,10 +864,73 @@ h1 {
     z-index: 2;
 }
 
-
-#harmadikoldal label {
-    cursor: pointer;
+#harmadikoldal .card .tartalom .kod {
+    position: relative;
+    display: grid;
+    grid-template-rows: 45px calc(100% - 90px) 45px;
+    height: 100%;
+    color: #fff;
 }
+
+#harmadikoldal .card .tartalom .kod .fejlec,
+#harmadikoldal .card .tartalom .kod .lablec {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#harmadikoldal .card .tartalom .kod .fejlec {
+    border-bottom: 3px solid #fff;
+
+}
+
+#harmadikoldal .card .tartalom .kod .lablec {
+    border-top: 3px solid #fff;
+    justify-content: right;
+}
+
+#harmadikoldal .card .tartalom .kod .kozep {
+    margin: 10px 0;
+    font-size: 1.2em;
+    overflow-y: auto;
+}
+
+#harmadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#harmadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-track {
+    background-color: #58513e;
+}
+
+#harmadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-thumb {
+    background-color: #58513e;
+    /* border: 5px solid rgba(0, 0, 0, 0); */
+    border-radius: 10px;
+}
+
+#harmadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#harmadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-track {
+    background: #58513e;
+}
+
+#harmadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #E8126E;
+    border: 4px solid #58513e;
+}
+
+@media (max-width: 560px) {
+    #harmadikoldal .card {
+        width: calc(100% - 10px);
+        height: 50vh;
+    }
+}
+
 
 /* negyedik oldal */
 
