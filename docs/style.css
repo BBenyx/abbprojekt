@@ -26,6 +26,7 @@ html {
 /* navigacio */
 
 nav a {
+    text-decoration: none;
 }
 
 nav ul {
