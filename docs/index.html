@@ -285,7 +285,7 @@
         <article id="negyedikoldal">
             <div class="cim">kiemelések</div>
             <div class="alja">
-                <div class="card">
+                <div class="cardem">
 
                     <div class="tartalom">
                         <label for="negyedikoldalgombocska">
@@ -297,25 +297,11 @@
                                         &#60;em&#62;
                                     </div>
                                     <div class="kozep">
-                                        Sok könyvben és cikkben egy paragrafusban csak egy mondat lehet. Bár a
-                                        „paragrafus”
-                                        értelme elég nyilvánvaló, a weben sokszor sokkal rövidebb szövegeket is meg
-                                        szoktak
-                                        jelölni paragrafusként, mivel a szerző szerint ez sokkal „szemantikusabb”, mint
-                                        a
-                                        div
-                                        elem használata).
-
-                                        A paragrafus a weben egy vagy több mondat csoportja, éppen úgy, mint az
-                                        újságokban
-                                        vagy
-                                        a könyvekben. A webes sokkal jobb, ha ezekhez használjuk a paragrafus elemet, és
-                                        nem
-                                        hagyunk a szövegben egyedül csak úgy szövegrészeket. Ha csak néhány szóról van
-                                        szó,
-                                        vagy
-                                        nem egy teljes mondatról, akkor ezeket nem kell feltétlenül paragrafusként
-                                        megjelölnöd.
+                                        A HTML-ben két módszer van arra, ha egy szövegrészt ki akarunk emelni az
+                                        olvasónak, például hibákat, figyelmeztetéseket vagy megjegyzéseket.
+                                        A vizuális böngészőkben ezt egy eltérő színt vagy betűtípust, esetleg félkövér
+                                        vagy dőlt megjelenést jelent. A képernyő-felolvasók használói számára a kiemelés
+                                        eredmény egy más hangtónus vagy egyéb hangjelzés lehet.
                                     </div>
                                     <div class="lablec">
                                         &#60;&#47;em&#62;
@@ -329,11 +315,48 @@
                                         &#60;em&#62;
                                     </div>
                                     <div class="kozep">
-                                        <p>&#60;p&#62;Ez egy nagyon rövid bekezdés. Csak két mondatból
-                                            áll.&#60;&#47;p&#62;</p>
+                                        <p>&#60;p&#62;&#60;em&#62;Megjegyzés:&#60;&#47;em&#62; a bojlert ki kell húzni éjszakára.&#60;&#47;p&#62;</p>
                                     </div>
                                     <div class="lablec">
                                         &#60;&#47;em&#62;
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="cardstrong">
+
+                    <div class="tartalom">
+                        <label for="negyedikoldalgombocskaketto">
+                            <input type="checkbox" id="negyedikoldalgombocskaketto">
+
+                            <div id="negyedikoldalleiras">
+                                <div class="leiras">
+                                    <div class="fejlec">
+                                        &#60;strong&#62;
+                                    </div>
+                                    <div class="kozep">
+                                        Ha a teljes bekezdést ki kell emelned, de a bekezdésen belül is van olyan rész, amelyet ismét kiemelnél, akkor használd a strong elemet, amely egy erősebb kiemelést jelent
+                                    </div>
+                                    <div class="lablec">
+                                        &#60;&#47;strong&#62;
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="negyedikoldalkod">
+                                <div class="kod">
+                                    <div class="fejlec">
+                                        &#60;strong&#62;
+                                    </div>
+                                    <div class="kozep">
+                                        <p>&#60;p&#62; Megjegyzés: a bojlert ki &#60;strong&#62; kell &#60;&#47;strong&#62; húzni
+                                            minden éjszaka, különben felrobban -
+                                            &#60;strong&#62; és mind meghalunk &#60;&#47;strong&#62; . &#60;&#47;p&#62;</p>
+                                    </div>
+                                    <div class="lablec">
+                                        &#60;&#47;strong&#62;
                                     </div>
                                 </div>
                             </div>
