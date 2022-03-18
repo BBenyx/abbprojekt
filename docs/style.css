@@ -705,6 +705,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
     font-weight: bold;
     padding-top: 20px;
     font-size: 2.5em;
@@ -955,6 +956,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 2.5em;
     letter-spacing: 2px;
@@ -1208,7 +1210,7 @@ h1 {
     position: absolute;
     background: #6B25CE;
     border-radius: 10px 0 0 10px;
-    box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
+    box-shadow: 0 10px 0 rgb(0, 0, 0, 0.4);
     border: 1px solid #272727;
     top: 0;
     left: 0;
@@ -2060,28 +2062,14 @@ h1 {
 }
 
 #kilencedikoldal .tartalom{
-<<<<<<< HEAD
-    position: absolute;
-=======
     position: relative;
->>>>>>> test
     width: 100%;
     height: 100%;
 }
 
 #kilencedikoldal video{
-<<<<<<< HEAD
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
-    object-fit: scale-down;
-=======
     width: 100%;
     height: 100%;
->>>>>>> test
     outline: none;
     border-radius: 10px;
 }
