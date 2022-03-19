@@ -1898,6 +1898,7 @@ h1 {
     height: 65vh;
     border-radius: 10px;
     z-index: 2;
+    border: solid 1px #000;
 }
 
 #nyolcadikoldal .card .tartalom #nyolcadikoldalleiras { /* kartya beallitasok */
