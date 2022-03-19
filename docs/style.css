@@ -1833,7 +1833,7 @@ h1 {
     text-shadow: 10px 10px 0 rgb(0, 0, 0, 0.25);
     letter-spacing: 2px;
     height: 30vh;
-    color: #272727;
+    color: #fff;
 }
 
 /* oldal kartyat tartalmazo resz */
@@ -1918,7 +1918,7 @@ h1 {
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
     height: 100%;
-    color: #272727;
+    color: #fff;
 }
 
 #nyolcadikoldal .card .tartalom .leiras .fejlec,
@@ -1930,12 +1930,12 @@ h1 {
 }
 
 #nyolcadikoldal .card .tartalom .leiras .fejlec {
-    border-bottom: 3px solid #272727;
+    border-bottom: 3px solid #fff;
 
 }
 
 #nyolcadikoldal .card .tartalom .leiras .lablec {
-    border-top: 3px solid #272727;
+    border-top: 3px solid #fff;
     justify-content: right;
 }
 
