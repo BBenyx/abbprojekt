@@ -1534,10 +1534,6 @@ h1 {
     font-size: 20px;
 }
 
-#otodikoldal #balspan {
-    
-}
-
 #spanvonal1 {
     border-bottom: 2px solid #fff;
     width: 50%;
@@ -1812,6 +1808,145 @@ h1 {
     cursor: pointer;
 }
 
+
+
+/* Hetedik oldal */
+
+#hetedikoldal {     /*Article háttér és méret*/
+    height: 100vh;
+    position: relative;
+    background: #FFBE0B;
+}
+
+#hetedikoldal img {
+    position: absolute;
+    top: 100%;
+    transform: translate(0,-100%);
+    left: 50%;
+    z-index: 1;
+}
+
+
+.gombid {   /*Div beállítása amiben a két gomb van*/
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin-top: 100px;
+}
+
+#radioidon,
+#radioidoff {   /*Radio input láthatóságának beállítása*/
+    display: none;
+}
+
+#id1 {  /*Külső sárga gomb beállítása*/
+    margin: 10px;
+    width: 90%;
+    height: 400px;
+    padding: 20px;
+    background-color: #EDB419;
+    box-shadow: 7px 7px 3px #e80;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 5;
+    font-family: sans-serif;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#id2 { /*Belső szürke gomb beállítása*/
+    margin: 10px;
+    width: 90%;
+    height: 400px;
+    padding: 20px;
+    background-color: #525252;
+    box-shadow: inset 7px 7px 3px #333;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 4;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+#hetedikoldal #id1 h2 { /*Külső sárga gomb cím beállítás (külső szöveg)*/
+    font-size: 35px;
+    color: #272727;
+    padding: 10px;
+}
+
+#hetedikoldal #id2 h2 { /*Belső szürke gomb cím beállítás*/
+    font-size: 35px;
+    padding: 10px;
+}
+
+#hetedikoldal p {
+    width: 65%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#hetedikoldal #id2 { /*Belső szürke gomb szövegszín*/
+    color: #fff;
+}
+
+#hetedikoldal #id1 { /*Külső sárga gomb szövegszín*/
+    color: #272727;
+}
+
+#hetedikoldal #id1 #spanvonal1 {    /*Eredeti beállítás ötödik oldalon*/
+    border-bottom: 2px solid #272727;
+   
+}
+
+#hetedikoldal #id1 #spanvonal2 {    /*Eredeti beállítás ötödik oldalon*/
+    border-top: 2px solid #272727; 
+}
+
+#radioidon:checked~#id1 { /*Ha a külső (sárga) gombot megnyomja (radio gombot) akkor tűnjön el a sárga gomb (a hátsót lehessen látni)*/
+    visibility: hidden;
+}
+
+@media (max-width: 1870px) {
+    #hetedikoldal img {
+        width: 60%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    #id1,
+    #id2 {
+        width: 110%;
+    }
+    #hetedikoldal img {
+        width: 100%;
+        left: -10%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    #id1,
+    #id2 {
+        height: 500px;
+    }
+
+    #hetedikkoldal {
+        height: 100vh;
+    }
+
+@media (max-width: 380px) {
+    #id1,
+    #id2 {
+        height: 600px;
+    }
+    #hetedikoldal {
+        height: 130vh;
+    }
+}
+
+
 /* nyolcadik oldal */
 
 #nyolcadikoldal {
@@ -2035,13 +2170,6 @@ h1 {
 }
 
 
-/* Hetedik oldal */
-
-#hetedikoldal {
-    height: 100vh;
-    position: relative;
-    background: #FFBE0B;
-}
 
 /* kilencedik oldal */
 
