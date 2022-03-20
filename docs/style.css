@@ -25,14 +25,6 @@ html {
 
 /* navigacio */
 
-nav a {
-    text-decoration: none;
-}
-
-nav ul {
-    list-style: none;
-}
-
 #dropdown {
     position: fixed;
     width: 100%;
@@ -43,16 +35,17 @@ nav ul {
 nav {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 60px);
     background: #272727;
     overflow: hidden;
     top: 60px;
     left: 0;
-    max-height: 0%;
+    max-height: 0;
     transition: max-height .5s ease-out;
 }
 
 .menu a {
+    text-decoration: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -60,6 +53,9 @@ nav {
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
     font-size: 1.3em;
     background: #313131;
     box-shadow: 10px 10px rgb(0, 0, 0, 0.4);
@@ -75,6 +71,7 @@ nav {
 
 .menu li:nth-child(2) a:hover {
     background: #FFBE0B;
+    color: #272727;
 }
 
 .menu li:nth-child(3) a:hover {
@@ -102,9 +99,13 @@ nav {
     background: #FF006E;
 }
 
+.menu li:nth-child(9) a:hover {
+    background: #8338EC;
+}
+
 .menu a:hover {
     box-shadow: inset 10px 10px 0 rgb(0, 0, 0, 0.4);
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 
@@ -116,13 +117,35 @@ nav ul {
     grid-gap: 20px;
     width: 100%;
     height: 100%;
+    overflow-y: auto;
 }
 
 nav ul li {
+    list-style: none;
     position: relative;
     border-radius: 5px;
 }
 
+nav ul li:nth-child(1) {
+    grid-row: 1 / 3;
+}
+
+nav ul li:nth-child(3) {
+    grid-row: 2/4;
+}
+
+nav ul li:nth-child(5) {
+    grid-column: 1/3;
+}
+
+nav ul li:nth-child(7) {
+    grid-column: 2/3;
+    grid-row: 5/7;
+}
+
+nav ul li:nth-child(9) {
+    grid-column: 1/3;
+}
 
 .hamb {
     position: relative;
@@ -135,6 +158,23 @@ nav ul li {
 .hamb:hover .menuicon {
     animation: menueffect 1s;
 }
+
+.menuicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+#menucheck {
+    display: none;
+}
+
+.menucheck:checked~nav {
+    max-height: 100vh;
+}
+
 
 @keyframes menueffect {
     0% {
@@ -154,44 +194,33 @@ nav ul li {
     }
 }
 
-.menuicon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-}
-
-#menucheck {
-    display: none;
-}
-
-.menucheck:checked~nav {
-    max-height: 100%;
-}
-
-
 @media (max-width: 900px) {
     nav ul {
-        padding: 20px;
-        display: grid;
         grid-template-columns: calc(100% - 10px);
-        grid-auto-rows: 11vh;
-        grid-gap: 20px;
-        width: 100%;
-        height: 200vh;
-        overflow-y: auto;
+        grid-auto-rows: 15vh;
     }
 
-    nav {
-        overflow-y: auto;
+    nav ul li:nth-child(1) {
+        grid-row: 1 / 2;
     }
 
-    .menucheck:checked~nav {
-        max-height: 200vh;
+    nav ul li:nth-child(3) {
+        grid-row: 2/3;
+    }
+
+    nav ul li:nth-child(5) {
+        grid-column: 1/2;
+    }
+
+    nav ul li:nth-child(7) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    nav ul li:nth-child(9) {
+        grid-column: 1/2;
     }
 }
-
 
 /* scrolling */
 
@@ -545,7 +574,8 @@ h1 {
 
 /* leiras unchecked */
 
-#masodikoldal .card {   /* kartya helye, nagysaga */
+#masodikoldal .card {
+    /* kartya helye, nagysaga */
     position: relative;
     background: #EDB419;
     width: 70%;
@@ -554,7 +584,8 @@ h1 {
     z-index: 2;
 }
 
-#masodikoldal .card .tartalom #masodikoldalleiras { /* kartya beallitasok */
+#masodikoldal .card .tartalom #masodikoldalleiras {
+    /* kartya beallitasok */
     position: absolute;
     background: #EDB419;
     border-radius: 10px;
@@ -567,7 +598,8 @@ h1 {
     z-index: 3;
 }
 
-#masodikoldal .card .tartalom .leiras { /* fej, lablec, lerias tartalmazo resz */
+#masodikoldal .card .tartalom .leiras {
+    /* fej, lablec, lerias tartalmazo resz */
     position: relative;
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
@@ -576,7 +608,8 @@ h1 {
 }
 
 #masodikoldal .card .tartalom .leiras .fejlec,
-#masodikoldal .card .tartalom .leiras .lablec { /* fej, lablec */
+#masodikoldal .card .tartalom .leiras .lablec {
+    /* fej, lablec */
     display: flex;
     align-items: center;
     font-size: 2em;
@@ -593,7 +626,8 @@ h1 {
     justify-content: right;
 }
 
-#masodikoldal .card .tartalom .leiras .kozep {  /* leiras */
+#masodikoldal .card .tartalom .leiras .kozep {
+    /* leiras */
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
@@ -618,7 +652,8 @@ h1 {
 
 /* kod checked */
 
-#masodikoldal .card .tartalom #masodikoldalkod {    /* kartya */
+#masodikoldal .card .tartalom #masodikoldalkod {
+    /* kartya */
     position: absolute;
     background: #58513e;
     border-radius: 10px;
@@ -631,7 +666,8 @@ h1 {
     z-index: 2;
 }
 
-#masodikoldal .card .tartalom .kod {    /* fej, lablec, leiras tartalmazo resz */
+#masodikoldal .card .tartalom .kod {
+    /* fej, lablec, leiras tartalmazo resz */
     position: relative;
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
@@ -640,7 +676,8 @@ h1 {
 }
 
 #masodikoldal .card .tartalom .kod .fejlec,
-#masodikoldal .card .tartalom .kod .lablec {    /* fej, lablec */
+#masodikoldal .card .tartalom .kod .lablec {
+    /* fej, lablec */
     display: flex;
     align-items: center;
     font-size: 2em;
@@ -657,7 +694,8 @@ h1 {
     justify-content: right;
 }
 
-#masodikoldal .card .tartalom .kod .kozep { /* leiras */
+#masodikoldal .card .tartalom .kod .kozep {
+    /* leiras */
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
@@ -718,26 +756,26 @@ h1 {
     color: #fff;
 }
 
-#harmadikoldal .cim span:nth-child(1){
+#harmadikoldal .cim span:nth-child(1) {
     position: relative;
     right: 10px;
     width: 40px;
     height: 85px;
 }
 
-#harmadikoldal .cim span:nth-child(1) img{
+#harmadikoldal .cim span:nth-child(1) img {
     position: absolute;
     bottom: 0;
 }
 
-#harmadikoldal .cim span:nth-child(2){
+#harmadikoldal .cim span:nth-child(2) {
     position: relative;
     left: 10px;
     width: 40px;
     height: 70px;
 }
 
-#harmadikoldal .cim span:nth-child(2) img{
+#harmadikoldal .cim span:nth-child(2) img {
     position: absolute;
     top: 0;
 }
@@ -798,7 +836,8 @@ h1 {
 
 /* leiras unchecked */
 
-#harmadikoldal .card {      /* kartya helye es nagysaga */
+#harmadikoldal .card {
+    /* kartya helye es nagysaga */
     position: absolute;
     right: 0;
     top: 0;
@@ -809,7 +848,8 @@ h1 {
     z-index: 2;
 }
 
-#harmadikoldal .card .tartalom #harmadikoldalleiras {      /* kartya beallitasok */
+#harmadikoldal .card .tartalom #harmadikoldalleiras {
+    /* kartya beallitasok */
     position: absolute;
     background: #E8126E;
     border-radius: 10px 0 0 10px;
@@ -822,7 +862,8 @@ h1 {
     z-index: 3;
 }
 
-#harmadikoldal .card .tartalom .leiras {       /* fej, lablec, leiras tartalmazo resz */
+#harmadikoldal .card .tartalom .leiras {
+    /* fej, lablec, leiras tartalmazo resz */
     position: relative;
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
@@ -831,7 +872,8 @@ h1 {
 }
 
 #harmadikoldal .card .tartalom .leiras .fejlec,
-#harmadikoldal .card .tartalom .leiras .lablec {    /* fej, lablec */
+#harmadikoldal .card .tartalom .leiras .lablec {
+    /* fej, lablec */
     display: flex;
     align-items: center;
     font-size: 2em;
@@ -848,7 +890,8 @@ h1 {
     justify-content: right;
 }
 
-#harmadikoldal .card .tartalom .leiras .kozep {     /* leiras */
+#harmadikoldal .card .tartalom .leiras .kozep {
+    /* leiras */
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
@@ -873,7 +916,8 @@ h1 {
 /* kod checked */
 
 
-#harmadikoldal .card .tartalom #harmadikoldalkod {      /* kartya */
+#harmadikoldal .card .tartalom #harmadikoldalkod {
+    /* kartya */
     position: absolute;
     background: #58513e;
     border-radius: 10px 0 0 10px;
@@ -895,7 +939,8 @@ h1 {
 }
 
 #harmadikoldal .card .tartalom .kod .fejlec,
-#harmadikoldal .card .tartalom .kod .lablec {       /* fej, lablec */
+#harmadikoldal .card .tartalom .kod .lablec {
+    /* fej, lablec */
     display: flex;
     align-items: center;
     font-size: 2em;
@@ -912,7 +957,8 @@ h1 {
     justify-content: right;
 }
 
-#harmadikoldal .card .tartalom .kod .kozep {        /* leiras */
+#harmadikoldal .card .tartalom .kod .kozep {
+    /* leiras */
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
@@ -959,7 +1005,8 @@ h1 {
 
 /* oldal cim */
 
-#negyedikoldal .cim {      /* cim */
+#negyedikoldal .cim {
+    /* cim */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -974,7 +1021,8 @@ h1 {
 
 /* oldal kartyakat tartalmazo resz */
 
-#negyedikoldal .alja {      /* kartyakat tartalmazó resz */
+#negyedikoldal .alja {
+    /* kartyakat tartalmazó resz */
     padding: 10px;
     position: relative;
     height: 70vh;
@@ -982,7 +1030,8 @@ h1 {
 
 /* oldal hatterkepe */
 
-#negyedikoldal img {    /* oldal hatterkep */
+#negyedikoldal img {
+    /* oldal hatterkep */
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1615,17 +1664,17 @@ h1 {
 
     /* scrolling */
 
-#mainAttraction {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: none;
-}
+    #mainAttraction {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: none;
+    }
 
-#mainAttraction>article {
-    scroll-snap-align: none;
-}
+    #mainAttraction>article {
+        scroll-snap-align: none;
+    }
 
 }
 
@@ -1716,7 +1765,8 @@ h1 {
     font-weight: bold;
 }
 
-#hatodikoldal .card .tartalom .kod {    /* fej, lablec, leiras tartalmazo resz */
+#hatodikoldal .card .tartalom .kod {
+    /* fej, lablec, leiras tartalmazo resz */
     position: relative;
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
@@ -1835,7 +1885,8 @@ h1 {
 /*---------------*/
 
 
-#hetedikoldal {     /*Article háttér és méret*/
+#hetedikoldal {
+    /*Article háttér és méret*/
     height: 100vh;
     position: relative;
     background: #FFBE0B;
@@ -1853,7 +1904,8 @@ h1 {
     color: #272727;
 }
 
-.gombid {   /*Div beállítása amiben a két gomb van*/
+.gombid {
+    /*Div beállítása amiben a két gomb van*/
     position: relative;
     width: 70%;
     height: auto;
@@ -1861,11 +1913,13 @@ h1 {
 }
 
 #radioidon,
-#radioidoff {   /*Radio input láthatóságának beállítása*/
+#radioidoff {
+    /*Radio input láthatóságának beállítása*/
     display: none;
 }
 
-#id1 {  /*Külső sárga gomb beállítása*/
+#id1 {
+    /*Külső sárga gomb beállítása*/
     margin: 10px;
     width: 90%;
     height: 400px;
@@ -1880,7 +1934,8 @@ h1 {
     cursor: pointer;
 }
 
-#id2 { /*Belső szürke gomb beállítása*/
+#id2 {
+    /*Belső szürke gomb beállítása*/
     margin: 10px;
     width: 90%;
     height: 400px;
@@ -1894,13 +1949,15 @@ h1 {
     cursor: pointer;
 }
 
-#hetedikoldal #id1 h2 { /*Külső sárga gomb cím beállítás (külső szöveg)*/
+#hetedikoldal #id1 h2 {
+    /*Külső sárga gomb cím beállítás (külső szöveg)*/
     font-size: 35px;
     color: #272727;
     padding: 10px;
 }
 
-#hetedikoldal #id2 h2 { /*Belső szürke gomb cím beállítás*/
+#hetedikoldal #id2 h2 {
+    /*Belső szürke gomb cím beállítás*/
     font-size: 35px;
     padding: 10px;
 }
@@ -1910,24 +1967,29 @@ h1 {
     font-size: 20px;
 }
 
-#hetedikoldal #id2 { /*Belső szürke gomb szövegszín*/
+#hetedikoldal #id2 {
+    /*Belső szürke gomb szövegszín*/
     color: #fff;
 }
 
-#hetedikoldal #id1 { /*Külső sárga gomb szövegszín*/
+#hetedikoldal #id1 {
+    /*Külső sárga gomb szövegszín*/
     color: #272727;
 }
 
-#hetedikoldal #id1 #spanvonal1 {    /*Eredeti beállítás ötödik oldalon*/
+#hetedikoldal #id1 #spanvonal1 {
+    /*Eredeti beállítás ötödik oldalon*/
     border-bottom: 2px solid #272727;
-   
+
 }
 
-#hetedikoldal #id1 #spanvonal2 {    /*Eredeti beállítás ötödik oldalon*/
-    border-top: 2px solid #272727; 
+#hetedikoldal #id1 #spanvonal2 {
+    /*Eredeti beállítás ötödik oldalon*/
+    border-top: 2px solid #272727;
 }
 
-#radioidon:checked~#id1 { /*Ha a külső (sárga) gombot megnyomja (radio gombot) akkor tűnjön el a sárga gomb (a hátsót lehessen látni)*/
+#radioidon:checked~#id1 {
+    /*Ha a külső (sárga) gombot megnyomja (radio gombot) akkor tűnjön el a sárga gomb (a hátsót lehessen látni)*/
     visibility: hidden;
 }
 
@@ -1941,6 +2003,7 @@ h1 {
 }
 
 @media (max-width: 380px) {
+
     #id1,
     #id2 {  /*Kisebb telefonon is jók legyen a gombok méretei*/
         height: 600px;
@@ -2034,7 +2097,8 @@ h1 {
 
 /* leiras unchecked */
 
-#nyolcadikoldal .card {   /* kartya helye, nagysaga */
+#nyolcadikoldal .card {
+    /* kartya helye, nagysaga */
     position: relative;
     background: #E8126E;
     width: 70%;
@@ -2044,7 +2108,8 @@ h1 {
     border: solid 1px #000;
 }
 
-#nyolcadikoldal .card .tartalom #nyolcadikoldalleiras { /* kartya beallitasok */
+#nyolcadikoldal .card .tartalom #nyolcadikoldalleiras {
+    /* kartya beallitasok */
     position: absolute;
     background: #E8126E;
     border-radius: 10px;
@@ -2057,7 +2122,8 @@ h1 {
     z-index: 3;
 }
 
-#nyolcadikoldal .card .tartalom .leiras { /* fej, lablec, lerias tartalmazo resz */
+#nyolcadikoldal .card .tartalom .leiras {
+    /* fej, lablec, lerias tartalmazo resz */
     position: relative;
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
@@ -2066,7 +2132,8 @@ h1 {
 }
 
 #nyolcadikoldal .card .tartalom .leiras .fejlec,
-#nyolcadikoldal .card .tartalom .leiras .lablec { /* fej, lablec */
+#nyolcadikoldal .card .tartalom .leiras .lablec {
+    /* fej, lablec */
     display: flex;
     align-items: center;
     font-size: 2em;
@@ -2083,7 +2150,8 @@ h1 {
     justify-content: right;
 }
 
-#nyolcadikoldal .card .tartalom .leiras .kozep {  /* leiras */
+#nyolcadikoldal .card .tartalom .leiras .kozep {
+    /* leiras */
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
@@ -2108,7 +2176,8 @@ h1 {
 
 /* kod checked */
 
-#nyolcadikoldal .card .tartalom #nyolcadikoldalkod {    /* kartya */
+#nyolcadikoldal .card .tartalom #nyolcadikoldalkod {
+    /* kartya */
     position: absolute;
     background: #58513e;
     border-radius: 10px;
@@ -2121,7 +2190,8 @@ h1 {
     z-index: 2;
 }
 
-#nyolcadikoldal .card .tartalom .kod {    /* fej, lablec, leiras tartalmazo resz */
+#nyolcadikoldal .card .tartalom .kod {
+    /* fej, lablec, leiras tartalmazo resz */
     position: relative;
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
@@ -2130,7 +2200,8 @@ h1 {
 }
 
 #nyolcadikoldal .card .tartalom .kod .fejlec,
-#nyolcadikoldal .card .tartalom .kod .lablec {    /* fej, lablec */
+#nyolcadikoldal .card .tartalom .kod .lablec {
+    /* fej, lablec */
     display: flex;
     align-items: center;
     font-size: 2em;
@@ -2147,7 +2218,8 @@ h1 {
     justify-content: right;
 }
 
-#nyolcadikoldal .card .tartalom .kod .kozep { /* leiras */
+#nyolcadikoldal .card .tartalom .kod .kozep {
+    /* leiras */
     margin: 10px 0;
     font-size: 1.2em;
     overflow-y: auto;
@@ -2206,12 +2278,12 @@ h1 {
     color: #fff;
 }
 
-#kilencedikoldal .alja{
+#kilencedikoldal .alja {
     height: 70vh;
     position: relative;
 }
 
-#kilencedikoldal .cardem{
+#kilencedikoldal .cardem {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2222,7 +2294,7 @@ h1 {
     height: 90%;
 }
 
-#kilencedikoldal .tartalom{
+#kilencedikoldal .tartalom {
     position: relative;
     width: 100%;
     height: 100%;
@@ -2236,13 +2308,13 @@ h1 {
 }
 
 @media (max-width: 700px) {
-    
+
     #kilencedikoldal .cim {
         font-size: 1.8em;
     }
 
-    #kilencedikoldal .cardem{
+    #kilencedikoldal .cardem {
         width: calc(100% - 20px);
         height: 90%;
-    } 
+    }
 }
