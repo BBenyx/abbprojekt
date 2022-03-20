@@ -1862,6 +1862,21 @@ h1 {
     color: #fff;
 }
 
+#hatodikoldal .card .tartalom .kod .kozep::-webkit-scrollbar {
+    width: 15px;
+}
+
+#hatodikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-track {
+    background: #58513e;
+}
+
+#hatodikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #3470CE;
+    border: 4px solid #58513e;
+}
+
+
 #hatodikoldal .card .tartalom #hatodikoldalkod {
     position: absolute;
     background: #58513e;
