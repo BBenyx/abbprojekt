@@ -65,41 +65,46 @@ nav {
 }
 
 .menu li:nth-child(1) a:hover {
-    background: #3A86FF;
+    background: #f80;
     transition: 0.3s;
 }
 
 .menu li:nth-child(2) a:hover {
-    background: #FFBE0B;
-    color: #272727;
+    background: #3A86FF;
+    transition: 0.3s;
 }
 
 .menu li:nth-child(3) a:hover {
-    background: #FF006E;
-}
-
-.menu li:nth-child(4) a:hover {
-    background: #8338EC;
-}
-
-.menu li:nth-child(5) a:hover {
-    background: #FB5607;
-}
-
-.menu li:nth-child(6) a:hover {
-    background: #3A86FF;
-}
-
-.menu li:nth-child(7) a:hover {
     background: #FFBE0B;
     color: #272727;
 }
 
-.menu li:nth-child(8) a:hover {
+.menu li:nth-child(4) a:hover {
     background: #FF006E;
 }
 
+.menu li:nth-child(5) a:hover {
+    background: #8338EC;
+}
+
+.menu li:nth-child(6) a:hover {
+    background: #FB5607;
+}
+
+.menu li:nth-child(7) a:hover {
+    background: #3A86FF;
+}
+
+.menu li:nth-child(8) a:hover {
+    background: #FFBE0B;
+    color: #272727;
+}
+
 .menu li:nth-child(9) a:hover {
+    background: #FF006E;
+}
+
+.menu li:nth-child(10) a:hover {
     background: #8338EC;
 }
 
@@ -238,6 +243,19 @@ nav ul li:nth-child(9) {
 
 
 
+  /*----------------*/
+ /* Nulladik oldal */
+/*----------------*/
+
+
+#nulladikoldal {
+    height: 100vh;
+    position: relative;
+    background-color: #f80;
+}
+
+
+
   /*------------*/
  /* Első oldal */
 /*------------*/
@@ -245,6 +263,7 @@ nav ul li:nth-child(9) {
 
 #elsooldal { /*Oldal hátterének beállításai*/
     height: 100vh;
+    position: relative;
     background: #3A86FF;
 }
 
@@ -476,7 +495,7 @@ h1 {
     }
 
     #elsooldal img {    /*Telefonon a háttér beállítása*/
-        top: 145%;
+        top: 100%;
     }
 }
 
