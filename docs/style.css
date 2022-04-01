@@ -258,6 +258,19 @@ nav ul li:nth-child(9) {
 }
 
 
+  /*----------------*/
+ /* Nulladik oldal */
+/*----------------*/
+
+
+#nulladikoldal {
+    height: 100vh;
+    position: relative;
+    background-color: #f80;
+}
+
+
+
   /*------------*/
  /* Első oldal */
 /*------------*/
@@ -265,6 +278,7 @@ nav ul li:nth-child(9) {
 
 #elsooldal { /*Oldal hátterének beállításai*/
     height: 100vh;
+    position: relative;
     background: #3A86FF;
     position: relative; /* kell a kép miatt különben elkóborol */
 }
@@ -497,7 +511,7 @@ h1 {
     }
 
     #elsooldal img {    /*Telefonon a háttér beállítása*/
-        top: 145%;
+        top: 100%;
     }
 }
 
