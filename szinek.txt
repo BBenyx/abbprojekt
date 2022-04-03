@@ -37,3 +37,11 @@ szövegdoboz nyomva háttér: #525252
 szöveg: #272727
 
 8. oldal == 3. odldal
+
+
+
+fooldal
+
+hatter: #FB5607
+betu feher: #FFFFFF
+ha kell a betuknek a szine ami hatul van az: #742500g
