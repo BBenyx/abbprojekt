@@ -2464,10 +2464,10 @@ h1 {
     border: solid 1px #000;
 }
 
-#nyolcadikoldal .card .tartalom #nyolcadikoldalleiras {
+#keszitok .card .tartalom #keszitokoldalleiras {
     /* kartya beallitasok */
     position: absolute;
-    background: #E8126E;
+    background: #DD4F0B;
     border-radius: 10px;
     box-shadow: 10px 10px 0 rgb(0, 0, 0, 0.4);
     top: 0;
@@ -2478,7 +2478,7 @@ h1 {
     z-index: 3;
 }
 
-#nyolcadikoldal .card .tartalom .leiras {
+#keszitok .card .tartalom .leiras {
     /* fej, lablec, lerias tartalmazo resz */
     position: relative;
     display: grid;
@@ -2487,8 +2487,8 @@ h1 {
     color: #fff;
 }
 
-#nyolcadikoldal .card .tartalom .leiras .fejlec,
-#nyolcadikoldal .card .tartalom .leiras .lablec {
+#kszitok .card .tartalom .leiras .fejlec,
+#keszitok .card .tartalom .leiras .lablec {
     /* fej, lablec */
     display: flex;
     align-items: center;
@@ -2496,17 +2496,7 @@ h1 {
     font-weight: bold;
 }
 
-#nyolcadikoldal .card .tartalom .leiras .fejlec {
-    border-bottom: 3px solid #fff;
-
-}
-
-#nyolcadikoldal .card .tartalom .leiras .lablec {
-    border-top: 3px solid #fff;
-    justify-content: right;
-}
-
-#nyolcadikoldal .card .tartalom .leiras .kozep {
+#keszitok .card .tartalom .leiras .kozep {
     /* leiras */
     margin: 10px 0;
     font-size: 1.2em;
@@ -2515,15 +2505,15 @@ h1 {
 
 /* leiras unchecked srollbar */
 
-#nyolcadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar {
+#keszitok .card .tartalom .leiras .kozep::-webkit-scrollbar {
     width: 15px;
 }
 
-#nyolcadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-track {
+#ksezitok .card .tartalom .leiras .kozep::-webkit-scrollbar-track {
     background: #EDB419;
 }
 
-#nyolcadikoldal .card .tartalom .leiras .kozep::-webkit-scrollbar-thumb {
+#keszitok .card .tartalom .leiras .kozep::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: #58513e;
     border: 4px solid #EDB419;
@@ -2532,7 +2522,7 @@ h1 {
 
 /* kod checked */
 
-#nyolcadikoldal .card .tartalom #nyolcadikoldalkod {
+#keszitok .card .tartalom #keszitoknevek {
     /* kartya */
     position: absolute;
     background: #58513e;
@@ -2546,7 +2536,7 @@ h1 {
     z-index: 2;
 }
 
-#nyolcadikoldal .card .tartalom .kod {
+#keszitok .card .tartalom .keszitonevek {
     /* fej, lablec, leiras tartalmazo resz */
     position: relative;
     display: grid;
@@ -2555,43 +2545,23 @@ h1 {
     color: #fff;
 }
 
-#nyolcadikoldal .card .tartalom .kod .fejlec,
-#nyolcadikoldal .card .tartalom .kod .lablec {
-    /* fej, lablec */
-    display: flex;
-    align-items: center;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-#nyolcadikoldal .card .tartalom .kod .fejlec {
-    border-bottom: 3px solid #fff;
-
-}
-
-#nyolcadikoldal .card .tartalom .kod .lablec {
-    border-top: 3px solid #fff;
-    justify-content: right;
-}
-
-#nyolcadikoldal .card .tartalom .kod .kozep {
+#keszitok .card .tartalom .keszitonevek .kozep {
     /* leiras */
     margin: 10px 0;
     font-size: 1.2em;
-    overflow-y: auto;
 }
 
 /* kod cheked scrollbar */
 
-#nyolcadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar {
+#keszitok .card .tartalom .keszitonevek .kozep::-webkit-scrollbar {
     width: 15px;
 }
 
-#nyolcadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-track {
+#keszitok .card .tartalom .keszitonevek .kozep::-webkit-scrollbar-track {
     background: #58513e;
 }
 
-#nyolcadikoldal .card .tartalom .kod .kozep::-webkit-scrollbar-thumb {
+#keszitok .card .tartalom .keszitonevek .kozep::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: #EDB419;
     border: 4px solid #58513e;
@@ -2600,7 +2570,7 @@ h1 {
 /* mobil */
 
 @media (max-width: 560px) {
-    #nyolcadikoldal .card {
+    #keszitok .card {
         width: calc(100% - 10px);
     }
 }
