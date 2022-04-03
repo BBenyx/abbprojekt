@@ -2453,10 +2453,10 @@ h1 {
 
 /* leiras unchecked */
 
-#nyolcadikoldal .card {
+#keszitok .card {
     /* kartya helye, nagysaga */
     position: relative;
-    background: #E8126E;
+    background: #DD4F0B;
     width: 70%;
     height: 65vh;
     border-radius: 10px;
