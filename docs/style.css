@@ -246,8 +246,8 @@ nav ul li:nth-child(9) {
 }
 
 
-  /*----------------*/
- /* Nulladik oldal */
+/*----------------*/
+/* Nulladik oldal */
 /*----------------*/
 
 
@@ -258,8 +258,8 @@ nav ul li:nth-child(9) {
 }
 
 
-  /*----------------*/
- /* Nulladik oldal */
+/*----------------*/
+/* Nulladik oldal */
 /*----------------*/
 
 
@@ -269,21 +269,204 @@ nav ul li:nth-child(9) {
     background-color: #f80;
 }
 
+/* background */
+
+#nulladikoldal #nulladikoldalhatter {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+#nulladikoldal #nulladikoldalhatter>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateZ(45deg);
+    color: #742500cd;
+    font-family: monospace;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 10px 10px 0 rgba(0, 0, 0, 0.20);
+}
+
+#nulladikoldal #nulladikoldalhatter #taghtml {
+    left: 5%;
+    top: 5%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagcsharp {
+    left: 20%;
+    top: 20%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagpython {
+    left: 40%;
+    top: 15%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagcpp {
+    left: 60%;
+    top: 3%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagmysql {
+    left: 75%;
+    top: 17%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagbts {
+    left: 87%;
+    top: 9%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagcss {
+    left: 92%;
+    top: 87%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagphp {
+    left: 13%;
+    top: 70%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagjs {
+    left: 30%;
+    top: 80%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagc {
+    left: 55%;
+    top: 75%;
+}
+
+#nulladikoldal #nulladikoldalhatter #tagjava {
+    left: 74%;
+    top: 69%;
+}
+
+@media (max-width: 850px) {
+    #nulladikoldal #nulladikoldalhatter #tagcsharp {
+        display: none;
+    }
 
 
-  /*------------*/
- /* Első oldal */
+    #nulladikoldal #nulladikoldalhatter #tagpython {
+        left: 25%;
+        top: 15%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagcpp {
+        left: 47%;
+        top: 3%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagmysql {
+        left: 67%;
+        top: 17%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagbts {
+        left: 80%;
+        top: 9%;
+    }
+
+
+    #nulladikoldal #nulladikoldalhatter #tagphp {
+        left: 10%;
+        top: 70%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagjs {
+        left: 25%;
+        top: 84%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagc {
+        left: 49%;
+        top: 75%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagjava {
+        left: 68%;
+        top: 69%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagcss {
+        left: 87%;
+        top: 87%;
+    }
+}
+
+@media (max-width: 550px) {
+    #nulladikoldal #nulladikoldalhatter #tagcsharp {
+        display: none;
+    }
+
+
+    #nulladikoldal #nulladikoldalhatter #tagpython {
+        left: 25%;
+        top: 15%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagcpp {
+        display: none;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagmysql {
+        left: 80%;
+        top: 9%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagbts {
+        left: 50%;
+        top: 9%;
+    }
+
+
+    #nulladikoldal #nulladikoldalhatter #tagphp {
+        left: 10%;
+        top: 70%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagjs {
+        left: 25%;
+        top: 84%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagc {
+        display: none;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagjava {
+        left: 75%;
+        top: 88%;
+    }
+
+    #nulladikoldal #nulladikoldalhatter #tagcss {
+        left: 57%;
+        top: 73%;
+    }
+}
+
+
+/*------------*/
+/* Első oldal */
 /*------------*/
 
 
-#elsooldal { /*Oldal hátterének beállításai*/
+#elsooldal {
+    /*Oldal hátterének beállításai*/
     height: 100vh;
     position: relative;
     background: #3A86FF;
-    position: relative; /* kell a kép miatt különben elkóborol */
+    position: relative;
+    /* kell a kép miatt különben elkóborol */
 }
 
-.cimek {    /*Cím beállítsa az első, ötödik és hetedik oldalra*/
+.cimek {
+    /*Cím beállítsa az első, ötödik és hetedik oldalra*/
     text-transform: uppercase;
     padding-top: 80px;
     margin-bottom: -40px;
@@ -291,10 +474,11 @@ nav ul li:nth-child(9) {
     font-size: 50px;
     text-align: center;
     text-shadow: 10px 10px 0 rgb(0, 0, 0, 0.25);
-    
+
 }
 
-#elsooldal img {    /*Háttérben a kép beállítása*/
+#elsooldal img {
+    /*Háttérben a kép beállítása*/
     position: absolute;
     top: 100%;
     left: 75%;
@@ -309,16 +493,19 @@ h1 {
     z-index: 2;
 }
 
-#gombcontainer {    /*Nagy konténer beállítása amiben az összes gomb bentvan*/
+#gombcontainer {
+    /*Nagy konténer beállítása amiben az összes gomb bentvan*/
     display: flex;
     justify-content: center;
 }
 
-.jobb { /*Section beállítása amiből kettő van és egy oszlop gombjai tartoznak benne*/
+.jobb {
+    /*Section beállítása amiből kettő van és egy oszlop gombjai tartoznak benne*/
     float: left;
 }
 
-.gombcont { /*Kis konténer amibe két gomb tartozik bele (elülső és a mögötte lévő)*/
+.gombcont {
+    /*Kis konténer amibe két gomb tartozik bele (elülső és a mögötte lévő)*/
     position: relative;
     width: 500px;
     height: 150px;
@@ -330,7 +517,8 @@ h1 {
 .h31,
 .h41,
 .h51,
-.h61 {  /*Elöl lévő (kék) gombok beállításai*/
+.h61 {
+    /*Elöl lévő (kék) gombok beállításai*/
     margin: 20px;
     width: 430px;
     height: 90px;
@@ -349,7 +537,8 @@ h1 {
 .h31:hover,
 .h41:hover,
 .h51:hover,
-.h61:hover {    /*Elöl lévő kék gombok hover beállításai*/
+.h61:hover {
+    /*Elöl lévő kék gombok hover beállításai*/
     transition: background-color 200ms, box-shadow 200ms;
     background-color: #05e;
     box-shadow: 4px 4px 2px #006;
@@ -360,12 +549,14 @@ h1 {
 .h31:not(:hover),
 .h41:not(:hover),
 .h51:not(:hover),
-.h61:not(:hover) {  /*Elöl lévő (kék) gombok hover beállításai, hogy visszafelé is legyen transition*/
+.h61:not(:hover) {
+    /*Elöl lévő (kék) gombok hover beállításai, hogy visszafelé is legyen transition*/
     background-color: #3470CE;
     transition: 200ms;
 }
 
-.karika {   /*Fehér karikának a beállításai ami az elöl lévő (kék) gombokon van*/
+.karika {
+    /*Fehér karikának a beállításai ami az elöl lévő (kék) gombokon van*/
     margin-top: -40px;
     display: inline-block;
     padding: 18px;
@@ -381,7 +572,8 @@ h1 {
 .h32,
 .h42,
 .h52,
-.h62 {  /*Hátsó (szürke) gombok beállításai*/
+.h62 {
+    /*Hátsó (szürke) gombok beállításai*/
     margin: 20px;
     width: 430px;
     height: 90px;
@@ -400,7 +592,8 @@ h1 {
 .h32:hover,
 .h42:hover,
 .h52:hover,
-.h62:hover {    /*Hátul lévő (szürke) gombok hover beállításai*/
+.h62:hover {
+    /*Hátul lévő (szürke) gombok hover beállításai*/
     background-color: #777;
     box-shadow: inset 5px 5px 2px #444;
     transition: background-color 200ms, box-shadow 200ms;
@@ -411,7 +604,8 @@ h1 {
 .h32:not(:hover),
 .h42:not(:hover),
 .h52:not(:hover),
-.h62:not(:hover) {  /*Hátul lévő (szürke) gombok hover beállításai, hogy visszafelé is legyen transition*/
+.h62:not(:hover) {
+    /*Hátul lévő (szürke) gombok hover beállításai, hogy visszafelé is legyen transition*/
     background-color: #525252;
     transition: background-color 200ms, box-shadow 200ms;
 }
@@ -427,7 +621,8 @@ h1 {
 #radio5on,
 #radio5off,
 #radio6on,
-#radio6off {    /*Rádió gombok láthatóságának kikapcsolása*/
+#radio6off {
+    /*Rádió gombok láthatóságának kikapcsolása*/
     display: none;
 }
 
@@ -436,7 +631,8 @@ h1 {
 #radio3on:checked~.h31,
 #radio4on:checked~.h41,
 #radio5on:checked~.h51,
-#radio6on:checked~.h61 {    /*Ha az elöl lévő (kék) gombot megnyomják (radio) akkor tűnjön el, így látható lesz a hátsó (szürke)*/
+#radio6on:checked~.h61 {
+    /*Ha az elöl lévő (kék) gombot megnyomják (radio) akkor tűnjön el, így látható lesz a hátsó (szürke)*/
     z-index: 4;
     visibility: hidden;
 }
@@ -451,7 +647,8 @@ h1 {
     .h31,
     .h41,
     .h51,
-    .h61 {  /*Telefonra az elöl lévő gombok beállításai (kék)*/
+    .h61 {
+        /*Telefonra az elöl lévő gombok beállításai (kék)*/
         margin: 0;
         width: 93%;
         height: 100px;
@@ -468,7 +665,8 @@ h1 {
     .h32,
     .h42,
     .h52,
-    .h62 { /*Telefonra a hátul lévő gombok beállításai (szürke)*/
+    .h62 {
+        /*Telefonra a hátul lévő gombok beállításai (szürke)*/
         margin: 0;
         width: 93%;
         height: 100px;
@@ -480,29 +678,35 @@ h1 {
         transform: translate(-50%, -50%);
     }
 
-    #gombcontainer {    /*Nagy konténer beállítása telóra amiben benne van az összes gomb*/
+    #gombcontainer {
+        /*Nagy konténer beállítása telóra amiben benne van az összes gomb*/
         display: unset;
     }
 
-    .jobb { /*Telefonra a gomb oszlopok beállítása*/
+    .jobb {
+        /*Telefonra a gomb oszlopok beállítása*/
         float: none;
     }
 
-    .gombcont { /*A kis konténer beállítása telefonra amiben csak egy elülső és a mögötte lévő gomb van bent*/
+    .gombcont {
+        /*A kis konténer beállítása telefonra amiben csak egy elülső és a mögötte lévő gomb van bent*/
         margin: 10px 0;
         width: 90%;
         position: relative;
     }
 
-    #telomargin {   /*A .gombcont konténer rácsúszna a címre telefonos nézetben*/
+    #telomargin {
+        /*A .gombcont konténer rácsúszna a címre telefonos nézetben*/
         margin-top: 80px;
     }
 
-    #elsooldal {    /*Oldal hátter méret állítás telefonra*/
+    #elsooldal {
+        /*Oldal hátter méret állítás telefonra*/
         height: 145vh;
     }
 
-    .karika {   /*Telefonra az elülső (kék) gombban levő fehér karika beállítása*/
+    .karika {
+        /*Telefonra az elülső (kék) gombban levő fehér karika beállítása*/
         margin-top: -40px;
         display: inline-block;
         padding: 18px;
@@ -510,17 +714,20 @@ h1 {
         height: 25px;
     }
 
-    #elsooldal img {    /*Telefonon a háttér beállítása*/
+    #elsooldal img {
+        /*Telefonon a háttér beállítása*/
         top: 100%;
     }
 }
 
 @media (max-width: 380px) {
-    #elsooldal {    /*Háttér beállítása kisebb telefonra*/
+    #elsooldal {
+        /*Háttér beállítása kisebb telefonra*/
         height: 175vh;
     }
 
-    #elsooldal img {    /*Háttérben a kép beállítása kisebb telefonra*/
+    #elsooldal img {
+        /*Háttérben a kép beállítása kisebb telefonra*/
         position: absolute;
         top: 175%;
         left: 75%;
@@ -531,8 +738,8 @@ h1 {
 
 
 
-  /*---------------*/
- /* Második oldal */
+/*---------------*/
+/* Második oldal */
 /*---------------*/
 
 #masodikoldal {
@@ -764,8 +971,8 @@ h1 {
 
 
 
-  /*----------------*/
- /* Harmadik oldal */
+/*----------------*/
+/* Harmadik oldal */
 /*----------------*/
 
 
@@ -1028,8 +1235,8 @@ h1 {
 
 
 
-  /*----------------*/
- /* Negyedik oldal */
+/*----------------*/
+/* Negyedik oldal */
 /*---------------*/
 
 
@@ -1547,37 +1754,42 @@ h1 {
 
 
 
-  /*--------------*/
- /* Ötödik oldal */
+/*--------------*/
+/* Ötödik oldal */
 /*--------------*/
 
 
-#otodikoldal { /*Article háttér és méret beállítások*/
+#otodikoldal {
+    /*Article háttér és méret beállítások*/
     height: 100vh;
     position: relative;
     background: #FB5607;
 }
 
-#otodikoldal .cimek {   /*Cím beállítás hozzáadása csak erre az oldalra (eredeti beállítások az első oldalon!)*/
+#otodikoldal .cimek {
+    /*Cím beállítás hozzáadása csak erre az oldalra (eredeti beállítások az első oldalon!)*/
     top: 20px;
 }
 
-#otodikoldal #jokerkiemelo {    /*Háttérben a kiemelő kép beállítása*/
+#otodikoldal #jokerkiemelo {
+    /*Háttérben a kiemelő kép beállítása*/
     position: absolute;
     top: 5%;
     right: 80%;
     z-index: 1;
 }
 
-#otodikoldal #jokerkartya { /*Háttérben a joker kártya beállítása*/
+#otodikoldal #jokerkartya {
+    /*Háttérben a joker kártya beállítása*/
     position: absolute;
     top: 95%;
-    transform: translate(0,-100%);
+    transform: translate(0, -100%);
     right: 13%;
     z-index: 1;
 }
 
-.gombjoker { /*Div beállítása amibe mind a két joker gomb bent van*/
+.gombjoker {
+    /*Div beállítása amibe mind a két joker gomb bent van*/
     position: relative;
     width: 70%;
     height: auto;
@@ -1585,11 +1797,13 @@ h1 {
 }
 
 #radiojon,
-#radiojoff {    /*Rádió gombok eltüntetése*/
+#radiojoff {
+    /*Rádió gombok eltüntetése*/
     display: none;
 }
 
-#j1 {   /*Elülső (narancs) gomb beállításai*/
+#j1 {
+    /*Elülső (narancs) gomb beállításai*/
     position: absolute;
     z-index: 5;
     width: 90%;
@@ -1605,7 +1819,8 @@ h1 {
     cursor: pointer;
 }
 
-#j2 {   /*Hátsó (szürke) gomb beállításai*/
+#j2 {
+    /*Hátsó (szürke) gomb beállításai*/
     position: absolute;
     z-index: 4;
     width: 90%;
@@ -1632,13 +1847,15 @@ h1 {
     font-size: 20px;
 }
 
-#spanvonal1 {   /*A felső <span> szöveg alatt lévő csik beállításai (ez egy div)*/
+#spanvonal1 {
+    /*A felső <span> szöveg alatt lévő csik beállításai (ez egy div)*/
     border-bottom: 2px solid #fff;
     width: 50%;
     margin-bottom: 20px;
 }
 
-#spanvonal2 {   /*Az alsó </span> szöveg alatt lévő csik beállításai (ez egy div)*/
+#spanvonal2 {
+    /*Az alsó </span> szöveg alatt lévő csik beállításai (ez egy div)*/
     border-top: 2px solid #fff;
     width: 50%;
     position: absolute;
@@ -1649,11 +1866,13 @@ h1 {
     text-align: right;
 }
 
-#spanmargin {   /*Spanvonal1,2 benne van egy divben ez az és ez csak azért kellet, hogy margin lehessen beállítani.*/
+#spanmargin {
+    /*Spanvonal1,2 benne van egy divben ez az és ez csak azért kellet, hogy margin lehessen beállítani.*/
     margin-left: 30px;
 }
 
-#radiojon:checked~#j1 { /*Ha az elülső (narancs) gombot (rádió) benyomják akkor tűnjön el és legyen látható a hátsó (szürke) gomb. */
+#radiojon:checked~#j1 {
+    /*Ha az elülső (narancs) gombot (rádió) benyomják akkor tűnjön el és legyen látható a hátsó (szürke) gomb. */
     z-index: 4;
     visibility: hidden;
 }
@@ -1661,14 +1880,19 @@ h1 {
 @media (max-width: 1050px) {
 
     #j1,
-    #j2 {   /*A két gomb szélességének beállítása*/
+    #j2 {
+        /*A két gomb szélességének beállítása*/
         width: 110%;
     }
-    #otodikoldal #jokerkartya { /*Háttérben a joker kártya beállítsai*/
+
+    #otodikoldal #jokerkartya {
+        /*Háttérben a joker kártya beállítsai*/
         width: 50%;
         left: 10%;
     }
-    #otodikoldal #jokerkiemelo {    /*Háttérben a kiemelő beállítása*/
+
+    #otodikoldal #jokerkiemelo {
+        /*Háttérben a kiemelő beállítása*/
         top: 12%;
     }
 }
@@ -1676,26 +1900,34 @@ h1 {
 @media (max-width: 850px) {
 
     #j1,
-    #j2 {   /*Két gomb beállítása telefonra*/
+    #j2 {
+        /*Két gomb beállítása telefonra*/
         height: 700px;
     }
 
-    #otodikoldal {  /*Oldal hátterének magasságának növelése telefonra*/
+    #otodikoldal {
+        /*Oldal hátterének magasságának növelése telefonra*/
         height: 130vh;
     }
 
-@media (max-width: 365px) {
-    #j1,
-    #j2 {   /*Két gomb beállítása kisebb telefonra*/
-        height: 820px;
+    @media (max-width: 365px) {
+
+        #j1,
+        #j2 {
+            /*Két gomb beállítása kisebb telefonra*/
+            height: 820px;
+        }
+
+        #otodikoldal {
+            /*Oldal hátterének magasságának növelése kisebb telefonra*/
+            height: 170vh;
+        }
+
+        #otodikoldal #jokerkiemelo {
+            /*Háttérben a kiemelő beállítsa kisebb telefonra*/
+            top: 18%;
+        }
     }
-    #otodikoldal {  /*Oldal hátterének magasságának növelése kisebb telefonra*/
-        height: 170vh;
-    }
-    #otodikoldal #jokerkiemelo {    /*Háttérben a kiemelő beállítsa kisebb telefonra*/
-        top: 18%;
-    }
-}
 
 
 
@@ -1717,8 +1949,8 @@ h1 {
 
 
 
-  /*---------------*/
- /* Hatodik oldal */
+/*---------------*/
+/* Hatodik oldal */
 /*---------------*/
 
 
@@ -1932,8 +2164,8 @@ h1 {
 
 
 
-  /*---------------*/
- /* Hetedik oldal */
+/*---------------*/
+/* Hetedik oldal */
 /*---------------*/
 
 
@@ -1944,15 +2176,17 @@ h1 {
     background: #FFBE0B;
 }
 
-#hetedikoldal img { /*Háttérben a kép beállítása*/
+#hetedikoldal img {
+    /*Háttérben a kép beállítása*/
     position: absolute;
     top: 100%;
-    transform: translate(0,-100%);
+    transform: translate(0, -100%);
     right: 5%;
     z-index: 1;
 }
 
-#hetedikoldal .cimek {  /*ID oldalon fekete legyen a cím*/
+#hetedikoldal .cimek {
+    /*ID oldalon fekete legyen a cím*/
     color: #272727;
 }
 
@@ -2048,7 +2282,8 @@ h1 {
 @media (max-width: 850px) {
 
     #id1,
-    #id2 {  /*Telefonon a gombok méretének beállítása*/
+    #id2 {
+        /*Telefonon a gombok méretének beállítása*/
         height: 500px;
         width: 110%;
     }
@@ -2057,18 +2292,21 @@ h1 {
 @media (max-width: 380px) {
 
     #id1,
-    #id2 {  /*Kisebb telefonon is jók legyen a gombok méretei*/
+    #id2 {
+        /*Kisebb telefonon is jók legyen a gombok méretei*/
         height: 600px;
     }
-    #hetedikoldal { /*Article hossz*/
+
+    #hetedikoldal {
+        /*Article hossz*/
         height: 130vh;
     }
 }
 
 
 
-  /*-----------------*/
- /* Nyolcadik oldal */
+/*-----------------*/
+/* Nyolcadik oldal */
 /*-----------------*/
 
 
@@ -2303,8 +2541,8 @@ h1 {
 
 
 
-  /*------------------*/
- /* Kilencedik oldal */
+/*------------------*/
+/* Kilencedik oldal */
 /*------------------*/
 
 
@@ -2371,8 +2609,8 @@ h1 {
     }
 }
 
-  /*-----------------*/
- /* Készítők  oldal */
+/*-----------------*/
+/* Készítők  oldal */
 /*-----------------*/
 
 
