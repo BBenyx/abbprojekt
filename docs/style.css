@@ -2457,8 +2457,8 @@ h1 {
     /* kartya helye, nagysaga */
     position: relative;
     background: #DD4F0B;
-    width: 70%;
-    height: 65vh;
+    width: 40%;
+    height: 40vh;
     border-radius: 10px;
     z-index: 2;
     border: solid 1px #000;
@@ -2466,6 +2466,7 @@ h1 {
 
 #keszitok .card .tartalom #keszitokoldalleiras {
     /* kartya beallitasok */
+    text-align: center;
     position: absolute;
     background: #DD4F0B;
     border-radius: 10px;
