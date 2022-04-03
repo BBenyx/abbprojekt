@@ -2539,6 +2539,7 @@ h1 {
 
 #keszitok .card .tartalom .keszitonevek {
     /* fej, lablec, leiras tartalmazo resz */
+    text-align: center;
     position: relative;
     display: grid;
     grid-template-rows: 45px calc(100% - 90px) 45px;
