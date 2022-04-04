@@ -2700,6 +2700,10 @@ h1 {
     border-radius: 10px;
     z-index: 2;
     border: solid 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
 #keszitok .card .tartalom #keszitokoldalleiras {
@@ -2715,6 +2719,9 @@ h1 {
     height: 100%;
     padding: 20px;
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #keszitok .card .tartalom .leiras {
@@ -2724,6 +2731,9 @@ h1 {
     grid-template-rows: 45px calc(100% - 90px) 45px;
     height: 100%;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #kszitok .card .tartalom .leiras .fejlec,
@@ -2783,6 +2793,9 @@ h1 {
     grid-template-rows: 45px calc(100% - 90px) 45px;
     height: 100%;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #keszitok .card .tartalom .keszitonevek .kozep {
